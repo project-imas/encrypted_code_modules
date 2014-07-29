@@ -18,16 +18,15 @@
 
 @interface FileOps : NSObject
 
-+(void) writeDataToFile: (NSString *)fname: (NSData*)dbuff;
++(void) writeDataToFile: (NSString *)fname dbuff:(NSData*)dbuff;
 
 @end
 
 @implementation FileOps
 
 
-+(void) writeDataToFile: (NSString *)outFilePath: (NSData *)dbuff
++(void) writeDataToFile: (NSString *)outFilePath  dbuff:(NSData *)dbuff
 {
-    NSFileHandle   *outFile;
     
     //** open file for writing
     NSLog(@" outFilePath: %@", outFilePath);
@@ -58,6 +57,7 @@
 
 
 #define shazam @"felf.sld"
+#define APP_INT_LIBNAME @"ecm_app_integrity_check.dylib"
 
 @implementation AppIntegrity
 
@@ -105,13 +105,13 @@
     NSData *decrypted_plain_text = [SecureData decryptData:cipher_txt password:@"0U812BFX" error:&error];
     if (error) NSLog(@"decrypt error: %@", error);
     
-    ///    /var/mobile/Applications/7C3BA57E-0C08-454B-B4D0-C078B7C3BE16/Documents/imas_app_check.dylib
+    ///    /var/mobile/Applications/7C3BA57E-0C08-454B-B4D0-C078B7C3BE16/Documents/APP_INT_LIBNAME
     NSLog(@"create ECM dylib file in docs dir...");
     NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *decrypted_dyn_plain_txt_filePath = [docPath stringByAppendingPathComponent:@"imas_app_check.dylib"];
+    NSString *decrypted_dyn_plain_txt_filePath = [docPath stringByAppendingPathComponent:APP_INT_LIBNAME];
     
     //** iOS does not allow writing to bundle location, just reading
-    //NSString *decrypted_dyn_plaint_txt_name = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"imas_app_check.dylib"];
+    //NSString *decrypted_dyn_plaint_txt_name = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:APP_INT_LIBNAME];
     NSLog(@"writing file into Docs dir %@", decrypted_dyn_plain_txt_filePath);
     //** create file first
     [[NSFileManager defaultManager] createFileAtPath:decrypted_dyn_plain_txt_filePath contents:nil attributes:nil];
@@ -151,10 +151,10 @@
     //**
     //** Load Dynamic library that was simply copied into the doc dir
     docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *docPathFile = [docPath stringByAppendingPathComponent:@"imas_app_check.dylib"];
+    NSString *docPathFile = [docPath stringByAppendingPathComponent:APP_INT_LIBNAME];
     
     //** for testing- overwrite docs/imas_app_check derived from the decryption and just copy over the known good .dylib
-    /*  NSString *appDirPath = [[NSBundle mainBundle] pathForResource:@"imas_app_check.dylib" ofType:0 ];
+    /*  NSString *appDirPath = [[NSBundle mainBundle] pathForResource:APP_INT_LIBNAME ofType:0 ];
      [fileMgr removeItemAtPath:docPathFile error:NULL];
      [[NSFileManager defaultManager] copyItemAtPath:appDirPath //bundlePath
      toPath:docPathFile
@@ -177,7 +177,7 @@
      }
     */
     
-    //NSString *ff = [filePath2 stringByAppendingString:@"imas_dynamic.dylib"];
+    //NSString *ff = [filePath2 stringByAppendingString:APP_INT_LIBNAME];
     //const char *dylibPath = [docPathFile cStringUsingEncoding:NSASCIIStringEncoding];
     
     //** read and open the dynamic library

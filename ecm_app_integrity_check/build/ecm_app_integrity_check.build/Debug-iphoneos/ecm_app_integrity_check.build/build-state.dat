@@ -28,6 +28,11 @@ c0000000053C6984F000000000000019E
 t1405524047
 s414
 
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c0000000053C69850000000000079C660
+t1405524048
+s7980640
+
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
 c0000000053C698510000000000A90C10
 t1405524049
@@ -38,27 +43,187 @@ c0000000053C698520000000000186D60
 t1405524050
 s1600864
 
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libSystem.dylib
+c0000000053C69859000000000001E300
+t1405524057
+s123648
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libobjc.dylib
+c0000000053C69859000000000055EFE0
+t1405524057
+s5631968
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcache.dylib
+c0000000053C69859000000000002A880
+t1405524057
+s174208
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib
+c0000000053C6985900000000000458C0
+t1405524057
+s284864
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcompiler_rt.dylib
+c0000000053C69859000000000003E3E0
+t1405524057
+s254944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcopyfile.dylib
+c0000000053C69859000000000002B130
+t1405524057
+s176432
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcorecrypto.dylib
+c0000000053C6985900000000000E1FD0
+t1405524057
+s925648
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdispatch.dylib
+c0000000053C6985900000000000A2A70
+t1405524057
+s666224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdyld.dylib
+c0000000053C69859000000000001E8A0
+t1405524057
+s125088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libkeymgr.dylib
+c0000000053C69859000000000000BF00
+t1405524057
+s48896
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/liblaunch.dylib
+c0000000053C698590000000000034380
+t1405524057
+s213888
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libmacho.dylib
+c0000000053C698590000000000022F30
+t1405524057
+s143152
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libremovefile.dylib
+c0000000053C69859000000000001E2A0
+t1405524057
+s123552
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_asl.dylib
+c0000000053C698590000000000052520
+t1405524057
+s337184
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_blocks.dylib
+c0000000053C698590000000000015F20
+t1405524057
+s89888
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_c.dylib
+c0000000053C6985900000000001B90D0
+t1405524057
+s1806544
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_configuration.dylib
+c0000000053C69859000000000001F170
+t1405524057
+s127344
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_dnssd.dylib
+c0000000053C69859000000000002FCF0
+t1405524057
+s195824
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_info.dylib
+c0000000053C69859000000000008A150
+t1405524057
+s565584
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_kernel.dylib
+c0000000053C6985900000000000B60E0
+t1405524057
+s745696
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_m.dylib
+c0000000053C698590000000000078720
+t1405524057
+s493344
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_malloc.dylib
+c0000000053C6985900000000000621F0
+t1405524057
+s401904
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_network.dylib
+c0000000053C6985900000000000BDAE0
+t1405524057
+s776928
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_notify.dylib
+c0000000053C698590000000000039080
+t1405524057
+s233600
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_platform.dylib
+c0000000053C69859000000000003CBC0
+t1405524057
+s248768
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_pthread.dylib
+c0000000053C69859000000000002CFE0
+t1405524057
+s184288
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_sandbox.dylib
+c0000000053C69859000000000001EB50
+t1405524057
+s125776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_stats.dylib
+c0000000053C69859000000000001EED0
+t1405524057
+s126672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libunwind.dylib
+c0000000053C6985900000000000236B0
+t1405524057
+s145072
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libxpc.dylib
+c0000000053C6985900000000000AC500
+t1405524057
+s705792
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+c0000000053C6987E000000000000514C
+t1405524094
+s20812
+
 N/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/ecm_app_integrity_check.dylib
-t1406659630
+t1406664523
 s14860
 
 N/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/app_integrity_check.o
-t1406659630
-s12852
+t1406664523
+s12860
 
 N/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/ecm_app_integrity_check.LinkFileList
-c0000000053D7EC2E00000000000000CC
-t1406659630
+c0000000053D7F93D00000000000000CC
+t1406662973
 s204
 
 N/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent
-t1406659630
+t1406664523
 s374
 
+N/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/app_integrity_check.h
+c0000000053D7C0AF00000000000000F9
+t1406648495
+s249
+
 N/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/app_integrity_check.m
-c0000000053D7E73C0000000000000FFC
-t1406658364
-s4092
+c0000000053D7FF4B0000000000001001
+t1406664523
+s4097
 
 N/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch
 c0000000053D7C0AF00000000000000A5
@@ -66,7 +231,7 @@ t1406648495
 s165
 
 N/var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch.pch
-t1406659630
+t1406662973
 s3189956
 
 CBuild AST from /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/app_integrity_check.m
@@ -74,20 +239,20 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies6476aeae2388b941^b059b2ae2388b941^---0#1#1#--18"Check dependencies36"F917A02D-4782-47E3-825C-54254FB04111-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies0682d4cb3688b941^4ef2d7cb3688b941^---0#1#1#--18"Check dependencies36"C56CBEC2-FD11-4F27-9DDD-863F927E63D5-
 
 CCodeSign /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/ecm_app_integrity_check.dylib
-s428352430.846764
-e428352430.938761
+s428357323.883546
+e428357323.975199
 r1
 xCodeSign
 x/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/ecm_app_integrity_check.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"CodeSign build/Debug-iphoneos/ecm_app_integrity_check.dylib59"CodeSign build/Debug-iphoneos/ecm_app_integrity_check.dylib3acfd8ae2388b941^4c53f0ae2388b941^---0#0#1#-19%DVTDocumentLocation2@137"file:///Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/ecm_app_integrity_check.dylib0000000000000000^1061"CodeSign build/Debug-iphoneos/ecm_app_integrity_check.dylib    cd /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    Using code signing identity "iPhone Developer: Gregg Ganley (W59C4483ZP)" and provisioning profile "iOS Team Provisioning Profile: *" (BD994DE2-705E-4FB4-9D62-9D6906020626)    /usr/bin/codesign --force --sign E435B2EAFD79D5C0E1EB342C4E080F881F80D254 --entitlements /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/ecm_app_integrity_check.dylib36"61B205F8-F2BC-418A-BFC7-652352EBFE13-
-b92B2D5F3-8417-4AEC-ACAE-4B713392B397
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"CodeSign build/Debug-iphoneos/ecm_app_integrity_check.dylib59"CodeSign build/Debug-iphoneos/ecm_app_integrity_check.dylib193ae2cb3688b941^3ba7f9cb3688b941^---0#0#1#-19%DVTDocumentLocation2@137"file:///Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/ecm_app_integrity_check.dylib0000000000000000^1061"CodeSign build/Debug-iphoneos/ecm_app_integrity_check.dylib    cd /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    Using code signing identity "iPhone Developer: Gregg Ganley (W59C4483ZP)" and provisioning profile "iOS Team Provisioning Profile: *" (BD994DE2-705E-4FB4-9D62-9D6906020626)    /usr/bin/codesign --force --sign E435B2EAFD79D5C0E1EB342C4E080F881F80D254 --entitlements /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/ecm_app_integrity_check.dylib36"EFFC5EA6-EA34-498C-A20D-32BEFE453B8D-
+b904AB7D3-A6BF-421A-9FBC-6C1DE97C0E5C
 
 CCompileC build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/app_integrity_check.o /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/app_integrity_check.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s428352430.808035
-e428352430.828178
+s428357323.844109
+e428357323.864645
 r1
 xCompileC
 xbuild/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/app_integrity_check.o
@@ -98,12 +263,12 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/app_integrity_check.m
 d/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/app_integrity_check.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection133"Compile /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/app_integrity_check.m247"CompileC build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/app_integrity_check.o ecm_app_integrity_check/app_integrity_check.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler4febceae2388b941^5304d4ae2388b941^---0#0#1#-19%DVTDocumentLocation2@132"file:///Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/app_integrity_check.m0000000000000000^4361"CompileC build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/app_integrity_check.o ecm_app_integrity_check/app_integrity_check.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-generated-files.hmap -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-own-target-headers.hmap -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-all-target-headers.hmap -iquote /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-project-headers.hmap -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/../../vendor/securefoundation -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/DerivedSources/armv7 -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/DerivedSources -F/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos -include /var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch -MMD -MT dependencies -MF /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/app_integrity_check.d --serialize-diagnostics /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/app_integrity_check.dia -c /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/app_integrity_check.m -o /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/app_integrity_check.o36"E786318C-33D0-481A-A85A-0BF04DC01CCF-
-b92B2D5F3-8417-4AEC-ACAE-4B713392B397
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection133"Compile /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/app_integrity_check.m247"CompileC build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/app_integrity_check.o ecm_app_integrity_check/app_integrity_check.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler1825d8cb3688b941^5c5addcb3688b941^---0#0#1#-19%DVTDocumentLocation2@132"file:///Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/app_integrity_check.m0000000000000000^4361"CompileC build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/app_integrity_check.o ecm_app_integrity_check/app_integrity_check.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-generated-files.hmap -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-own-target-headers.hmap -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-all-target-headers.hmap -iquote /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-project-headers.hmap -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/../../vendor/securefoundation -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/DerivedSources/armv7 -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/DerivedSources -F/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos -include /var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch -MMD -MT dependencies -MF /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/app_integrity_check.d --serialize-diagnostics /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/app_integrity_check.dia -c /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/app_integrity_check.m -o /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/app_integrity_check.o36"BDFE4AA5-328B-482D-BC5D-A3425C808F4C-
+b904AB7D3-A6BF-421A-9FBC-6C1DE97C0E5C
 
 CLd /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/ecm_app_integrity_check.dylib normal armv7
-s428352430.828644
-e428352430.845372
+s428357323.865386
+e428357323.882180
 r1
 xLd
 x/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/ecm_app_integrity_check.dylib
@@ -116,7 +281,6 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Develope
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libobjc.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libSystem.dylib
 d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcache.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcompiler_rt.dylib
@@ -145,15 +309,16 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Develope
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_stats.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libxpc.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection135"Link /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/ecm_app_integrity_check.dylib66"Ld build/Debug-iphoneos/ecm_app_integrity_check.dylib normal armv7172dd4ae2388b941^7b6bd8ae2388b941^---0#0#1#--1681"Ld build/Debug-iphoneos/ecm_app_integrity_check.dylib normal armv7    cd /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos -F/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos -filelist /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/ecm_app_integrity_check.LinkFileList -install_name @loader_path/ecm_app_integrity_check.dylib -dead_strip -ObjC -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=7.0 -framework Security -framework Foundation -single_module -compatibility_version 1 -current_version 1 -Xlinker -dependency_info -Xlinker /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/ecm_app_integrity_check_dependency_info.dat -o /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/ecm_app_integrity_check.dylib36"600ABA60-950B-432A-9DF7-B5493B7C387C-
-b92B2D5F3-8417-4AEC-ACAE-4B713392B397
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection135"Link /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/ecm_app_integrity_check.dylib66"Ld build/Debug-iphoneos/ecm_app_integrity_check.dylib normal armv75795ddcb3688b941^0ed8e1cb3688b941^---0#0#1#--1681"Ld build/Debug-iphoneos/ecm_app_integrity_check.dylib normal armv7    cd /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos -F/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos -filelist /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/ecm_app_integrity_check.LinkFileList -install_name @loader_path/ecm_app_integrity_check.dylib -dead_strip -ObjC -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=7.0 -framework Security -framework Foundation -single_module -compatibility_version 1 -current_version 1 -Xlinker -dependency_info -Xlinker /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/Objects-normal/armv7/ecm_app_integrity_check_dependency_info.dat -o /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/ecm_app_integrity_check.dylib36"DDF2B955-5045-4584-ADB6-923EF0CA88D9-
+b904AB7D3-A6BF-421A-9FBC-6C1DE97C0E5C
 
-CProcessPCH /Users/gganley/Library/Developer/Xcode/DerivedData/ecm_app_integrity_check-duwosiscnznvqtfcftvthxbslmpg/Index/PrecompiledHeaders/ecm_app_integrity_check-Prefix-cjaqxdrbwhlpuhdkdzziqdyjrzce_ast/ecm_app_integrity_check-Prefix.pch.pch ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+CProcessPCH /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/DerivedData/ecm_app_integrity_check/Index/PrecompiledHeaders/ecm_app_integrity_check-Prefix-cjaqxdrbwhlpuhdkdzziqdyjrzce_ast/ecm_app_integrity_check-Prefix.pch.pch ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
 CProcessPCH /var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch.pch ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s428352430.697289
-e428352430.807528
+s428355773.345020
+e428355773.453032
 r1
 xProcessPCH
 x/var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch.pch
@@ -163,18 +328,18 @@ xarmv7
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Precompile ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch355"ProcessPCH /var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch.pch ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compileref90b2ae2388b941^77bbceae2388b941^---0#0#1#-19%DVTDocumentLocation2@145"file:///Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch0000000000000000^4302"ProcessPCH /var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch.pch ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-generated-files.hmap -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-own-target-headers.hmap -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-all-target-headers.hmap -iquote /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-project-headers.hmap -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/../../vendor/securefoundation -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/DerivedSources/armv7 -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/DerivedSources -F/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos --serialize-diagnostics /var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch.d -c /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch -o /var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch.pch36"6FBBF850-BEBB-4135-B6A2-DBE3660A5E95-
-b92B2D5F3-8417-4AEC-ACAE-4B713392B397
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Precompile ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch355"ProcessPCH /var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch.pch ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler2c6258bd3088b941^26fb73bd3088b941^---0#0#1#-19%DVTDocumentLocation2@145"file:///Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch0000000000000000^4302"ProcessPCH /var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch.pch ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-generated-files.hmap -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-own-target-headers.hmap -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-all-target-headers.hmap -iquote /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check-project-headers.hmap -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/../../vendor/securefoundation -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/DerivedSources/armv7 -I/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/DerivedSources -F/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos --serialize-diagnostics /var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch.d -c /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch -o /var/folders/h_/tb_k3bcd02qbv9bbsk5r_2z80000gp/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ecm_app_integrity_check-Prefix-fmchfxzpenxxqxajfzlmkoxmndmv/ecm_app_integrity_check-Prefix.pch.pch36"7A6DEEFA-99E3-43E4-AACD-40D01E4395EA-
+bA4F4DFC8-1215-47E0-8AEC-18825CEC6601
 
 CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent
-s428352430.845874
-e428352430.846523
+s428357323.882698
+e428357323.883275
 r1
 xProcessProductPackaging
 x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist
 x/Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection255"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent255"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent7094d8ae2388b941^85b6d8ae2388b941^---0#0#1#-19%DVTDocumentLocation2@197"file:///Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent0034bcffddffdf42^908"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent    cd /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent36"5659DDF5-7FA0-44AE-AF0D-E351E20CA13B-
-b92B2D5F3-8417-4AEC-ACAE-4B713392B397
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection255"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent255"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent6901e2cb3688b941^b01fe2cb3688b941^---0#0#1#-19%DVTDocumentLocation2@197"file:///Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent0000000000000000^908"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent    cd /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/ecm_app_integrity_check.build/Debug-iphoneos/ecm_app_integrity_check.build/ecm_app_integrity_check.xcent36"8E1500D2-D490-48F7-B40F-BBF2C4E0A906-
+b904AB7D3-A6BF-421A-9FBC-6C1DE97C0E5C
 
 CProcessProductPackaging /Users/gganley/Library/MobileDevice/Provisioning\ Profiles/BD994DE2-705E-4FB4-9D62-9D6906020626.mobileprovision /Users/gganley/projs/imas/github/encrypted-code-modules/ecm_app_integrity_check/build/Debug-iphoneos/embedded.mobileprovision
 r0

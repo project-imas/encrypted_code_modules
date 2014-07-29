@@ -58,7 +58,7 @@ NSData *get_fileSize() {
     return fsize;
 }
 
-#define AppName @"AppIntegrity"
+#define AppName @"imas_ecm_demo_app"
 
 void doAppIntegrity() {
     

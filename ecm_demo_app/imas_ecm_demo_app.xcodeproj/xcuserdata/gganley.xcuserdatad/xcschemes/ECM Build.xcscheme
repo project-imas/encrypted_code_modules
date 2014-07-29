@@ -29,6 +29,15 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FE40DE6018D2031E0042D40B"
+            BuildableName = "imas_ecm_demo_app.app"
+            BlueprintName = "imas_ecm_demo_app"
+            ReferencedContainer = "container:imas_ecm_demo_app.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -39,6 +48,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FE40DE6018D2031E0042D40B"
+            BuildableName = "imas_ecm_demo_app.app"
+            BlueprintName = "imas_ecm_demo_app"
+            ReferencedContainer = "container:imas_ecm_demo_app.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

@@ -23,13 +23,14 @@
 
 /* Begin PBXBuildFile section */
 		FE0AB9C618E4ACFB0092419F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0AB9C518E4ACFB0092419F /* Security.framework */; };
-		FE2D8F2118ECDF9B002E1212 /* felf.sld in Resources */ = {isa = PBXBuildFile; fileRef = FE0AB9C718E4AF140092419F /* felf.sld */; };
 		FE40DE6518D2031E0042D40B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6418D2031E0042D40B /* Foundation.framework */; };
 		FE40DE6718D2031E0042D40B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6618D2031E0042D40B /* CoreGraphics.framework */; };
 		FE40DE6918D2031E0042D40B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6818D2031E0042D40B /* UIKit.framework */; };
 		FE40DE8418D2031E0042D40B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE8318D2031E0042D40B /* XCTest.framework */; };
 		FE40DE8518D2031E0042D40B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6418D2031E0042D40B /* Foundation.framework */; };
 		FE40DE8618D2031E0042D40B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6818D2031E0042D40B /* UIKit.framework */; };
+		FEA6026A19882E6B000F274E /* felf.sld in Resources */ = {isa = PBXBuildFile; fileRef = FEA6026919882E6B000F274E /* felf.sld */; };
+		FEB14A8819882BCB002DBF73 /* libSecureFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB14A8519882AA1002DBF73 /* libSecureFoundation.a */; };
 		FEBC99A9195B741B0062417B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBC99A8195B741B0062417B /* Images.xcassets */; };
 		FECA60101988268E00ADE7CE /* AppIntegrity.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA5FFD1988268E00ADE7CE /* AppIntegrity.m */; };
 		FECA60111988268E00ADE7CE /* SecureData.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA60001988268E00ADE7CE /* SecureData.m */; };
@@ -44,6 +45,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FEB14A8419882AA1002DBF73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEB14A8019882AA1002DBF73 /* SecureFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3B89357C162C92F1003750B6;
+			remoteInfo = SecureFoundation;
+		};
+		FEB14A8619882B99002DBF73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEB14A8019882AA1002DBF73 /* SecureFoundation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B89357B162C92F1003750B6;
+			remoteInfo = SecureFoundation;
+		};
 		FEFBA3F718ECE7C40065C59D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FE40DE5918D2031E0042D40B /* Project object */;
@@ -55,13 +70,14 @@
 
 /* Begin PBXFileReference section */
 		FE0AB9C518E4ACFB0092419F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		FE0AB9C718E4AF140092419F /* felf.sld */ = {isa = PBXFileReference; lastKnownFileType = file; name = felf.sld; path = imas_ecm_demo_app/felf.sld; sourceTree = "<group>"; };
-		FE40DE6118D2031E0042D40B /* AppIntegrity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIntegrity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE40DE6118D2031E0042D40B /* imas_ecm_demo_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imas_ecm_demo_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE40DE6418D2031E0042D40B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FE40DE6618D2031E0042D40B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		FE40DE6818D2031E0042D40B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FE40DE8218D2031E0042D40B /* imas_ecm_demo_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imas_ecm_demo_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE40DE8318D2031E0042D40B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FEA6026919882E6B000F274E /* felf.sld */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = felf.sld; sourceTree = "<group>"; };
+		FEB14A8019882AA1002DBF73 /* SecureFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SecureFoundation.xcodeproj; path = ../vendor/securefoundation/SecureFoundation.xcodeproj; sourceTree = "<group>"; };
 		FEBC99A8195B741B0062417B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FECA5FFC1988268E00ADE7CE /* AppIntegrity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppIntegrity.h; sourceTree = "<group>"; };
 		FECA5FFD1988268E00ADE7CE /* AppIntegrity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppIntegrity.m; sourceTree = "<group>"; };
@@ -85,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB14A8819882BCB002DBF73 /* libSecureFoundation.a in Frameworks */,
 				FE0AB9C618E4ACFB0092419F /* Security.framework in Frameworks */,
 				FE40DE6718D2031E0042D40B /* CoreGraphics.framework in Frameworks */,
 				FE40DE6918D2031E0042D40B /* UIKit.framework in Frameworks */,
@@ -108,8 +125,8 @@
 		FE40DE5818D2031E0042D40B = {
 			isa = PBXGroup;
 			children = (
+				FEB14A8019882AA1002DBF73 /* SecureFoundation.xcodeproj */,
 				FECA5FFA1988268E00ADE7CE /* ecm_demo_app */,
-				FE0AB9C718E4AF140092419F /* felf.sld */,
 				FEBC99A8195B741B0062417B /* Images.xcassets */,
 				FE40DE6318D2031E0042D40B /* Frameworks */,
 				FE40DE6218D2031E0042D40B /* Products */,
@@ -119,7 +136,7 @@
 		FE40DE6218D2031E0042D40B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE40DE6118D2031E0042D40B /* AppIntegrity.app */,
+				FE40DE6118D2031E0042D40B /* imas_ecm_demo_app.app */,
 				FE40DE8218D2031E0042D40B /* imas_ecm_demo_appTests.xctest */,
 			);
 			name = Products;
@@ -135,6 +152,14 @@
 				FE40DE8318D2031E0042D40B /* XCTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEB14A8119882AA1002DBF73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEB14A8519882AA1002DBF73 /* libSecureFoundation.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		FECA5FFA1988268E00ADE7CE /* ecm_demo_app */ = {
@@ -167,6 +192,7 @@
 		FECA5FFE1988268E00ADE7CE /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				FEA6026919882E6B000F274E /* felf.sld */,
 			);
 			path = libs;
 			sourceTree = "<group>";
@@ -205,10 +231,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				FEB14A8719882B99002DBF73 /* PBXTargetDependency */,
 			);
 			name = imas_ecm_demo_app;
 			productName = imas_ecm_demo_app;
-			productReference = FE40DE6118D2031E0042D40B /* AppIntegrity.app */;
+			productReference = FE40DE6118D2031E0042D40B /* imas_ecm_demo_app.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FE40DE8118D2031E0042D40B /* imas_ecm_demo_appTests */ = {
@@ -257,6 +284,12 @@
 			mainGroup = FE40DE5818D2031E0042D40B;
 			productRefGroup = FE40DE6218D2031E0042D40B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FEB14A8119882AA1002DBF73 /* Products */;
+					ProjectRef = FEB14A8019882AA1002DBF73 /* SecureFoundation.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FE40DE6018D2031E0042D40B /* imas_ecm_demo_app */,
@@ -265,6 +298,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FEB14A8519882AA1002DBF73 /* libSecureFoundation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSecureFoundation.a;
+			remoteRef = FEB14A8419882AA1002DBF73 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FE40DE5F18D2031E0042D40B /* Resources */ = {
@@ -276,7 +319,7 @@
 				FECA60151988268E00ADE7CE /* InfoPlist.strings in Resources */,
 				FECA60191988268E00ADE7CE /* imas_ecm_dynamiclib_builder in Resources */,
 				FECA60171988268E00ADE7CE /* imas_ecm_demo_app-Info.plist in Resources */,
-				FE2D8F2118ECDF9B002E1212 /* felf.sld in Resources */,
+				FEA6026A19882E6B000F274E /* felf.sld in Resources */,
 				FEBC99A9195B741B0062417B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,7 +345,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "########\n## Variables\nAPP_DIR_NAME=\"ecm_demo_app\"\nPROD_NAME=\"AppIntegrity\"\nCSFP=$CODESIGNING_FOLDER_PATH/${PROD_NAME}.app\nSECURE_LIB=\"felf.sld\"\n## app to be encrypted\nSENSITIVE_LIB=\"imas_app_check.dylib\"\n## encryption key\nLIB_KEY=\"0U812BFX\"\n\n#######\n## Debug output\necho \"ECM builder - patch in SIZE and FILE HASH\"\necho \"src:\" $SRCROOT\necho \"build_dir:\" $BUILD_DIR\necho \"config build_dir: \" $CONFIGURATION_BUILD_DIR\necho \"PROD NAME and dir:\" $PROD_NAME\necho \"codesign path:\" $CSFP\n\n#######\n## Secure the library\n$SRCROOT/$APP_DIR_NAME/imas_ecm_dynamiclib_builder -f $CSFP/$PROD_NAME -d $SRCROOT/$APP_DIR_NAME/$SENSITIVE_LIB -k $LIB_KEY\n\n#######\n## copy into bundle\necho \"copy SECURE_LIB from:\" $SRCROOT/$PROD_NAME\necho \"to: \" $CSFP/$SECURE_LIB\ncp $SRCROOT/$APP_DIR_NAME/$SECURE_LIB $CSFP\n## copy patched clear text .dylib to this for testing without encryption\n#cp $SRCROOT/ecm_demo_app/imas_app_check.dylib.out $CSFP/imas_app_check.dylib\n";
+			shellScript = "########\n## Variables\nAPP_DIR_NAME=\"ecm_demo_app\"\nPROD_NAME=\"imas_ecm_demo_app\"\nCSFP=$CODESIGNING_FOLDER_PATH/${PROD_NAME}.app\nSECURE_LIB_PATH=\"app_integrity/libs\"\nSECURE_LIB=\"felf.sld\"\n## app to be encrypted\nSENSITIVE_LIB=\"app_integrity/libs/ecm_app_integrity_check.dylib\"\n## encryption key\nLIB_KEY=\"0U812BFX\"\n\n#######\n## Debug output\necho \"ECM builder - patch in SIZE and FILE HASH\"\necho \"src:\" $SRCROOT\necho \"build_dir:\" $BUILD_DIR\necho \"config build_dir: \" $CONFIGURATION_BUILD_DIR\necho \"PROD NAME and dir:\" $PROD_NAME\necho \"codesign path:\" $CSFP\n\n#######\n## Secure the library\n$SRCROOT/$APP_DIR_NAME/tools/imas_ecm_dynamiclib_builder -f $CSFP/$PROD_NAME -d $SRCROOT/$APP_DIR_NAME/$SENSITIVE_LIB -k $LIB_KEY\n\n#######\n## copy into bundle\necho \"copy SECURE_LIB from:\" $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB\necho \"to: \" $CSFP/$SECURE_LIB\ncp $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB  $CSFP\n## copy patched clear text .dylib to this for testing without encryption\n#cp $SRCROOT/ecm_demo_app/imas_app_check.dylib.out $CSFP/imas_app_check.dylib\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -329,6 +372,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FEB14A8719882B99002DBF73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SecureFoundation;
+			targetProxy = FEB14A8619882B99002DBF73 /* PBXContainerItemProxy */;
+		};
 		FEFBA3F818ECE7C40065C59D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FE40DE6018D2031E0042D40B /* imas_ecm_demo_app */;
@@ -465,7 +513,7 @@
 					"$(SRCROOT)/../../vendor",
 					"$(PROJECT_DIR)/ecm_demo_app",
 				);
-				PRODUCT_NAME = AppIntegrity;
+				PRODUCT_NAME = imas_ecm_demo_app;
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/../vendor/securefoundation/SecureFoundation;
 				WRAPPER_EXTENSION = app;

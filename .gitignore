@@ -18,7 +18,7 @@ profile
 # Finder
 .DS_Store
 
-*.felf.sld
+*.sld
 decrypt.dylib
 imas_app_check.dylib.out
 

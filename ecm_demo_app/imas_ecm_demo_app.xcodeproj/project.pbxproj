@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = FE2D8F2718ECE6AA002E1212 /* Build configuration list for PBXAggregateTarget "ECM Build" */;
 			buildPhases = (
-				FE2D8F2818ECE79D002E1212 /* ShellScript */,
+				FE2D8F2818ECE79D002E1212 /* ECM BUNDLE .dylib files */,
 			);
 			dependencies = (
 				FEFBA3F818ECE7C40065C59D /* PBXTargetDependency */,
@@ -226,7 +226,7 @@
 			buildPhases = (
 				FE40DE5D18D2031E0042D40B /* Sources */,
 				FE40DE5E18D2031E0042D40B /* Frameworks */,
-				FE253C7C19883C73009F5FF8 /* ShellScript */,
+				FE253C7C19883C73009F5FF8 /* TOUCH FELF file for bundle COPY */,
 				FE40DE5F18D2031E0042D40B /* Resources */,
 			);
 			buildRules = (
@@ -335,26 +335,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FE253C7C19883C73009F5FF8 /* ShellScript */ = {
+		FE253C7C19883C73009F5FF8 /* TOUCH FELF file for bundle COPY */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "TOUCH FELF file for bundle COPY";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "########\n## Variables\nAPP_DIR_NAME=\"ecm_demo_app\"\nSECURE_LIB_PATH=\"app_integrity/libs\"\nSECURE_LIB=\"felf.sld\"\n\ntouch $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB";
 		};
-		FE2D8F2818ECE79D002E1212 /* ShellScript */ = {
+		FE2D8F2818ECE79D002E1212 /* ECM BUNDLE .dylib files */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "ECM BUNDLE .dylib files";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

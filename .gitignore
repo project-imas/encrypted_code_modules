@@ -26,3 +26,4 @@ imas_app_check.dylib.out
 build.output
 pkg
 DerivedData/
+build/

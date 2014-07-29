@@ -1,0 +1,6 @@
+[submodule "vendor/securefoundation"]
+	path = vendor/securefoundation
+	url = git@github.com:project-imas/securefoundation.git
+[submodule "vendor/app-password"]
+	path = vendor/app-password
+	url = git@github.com:project-imas/app-password.git

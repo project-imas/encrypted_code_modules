@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		FE2D8F2318ECE6AA002E1212 /* ECM Build */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FE2D8F2718ECE6AA002E1212 /* Build configuration list for PBXAggregateTarget "ECM Build" */;
+			buildPhases = (
+				FE2D8F2818ECE79D002E1212 /* ShellScript */,
+			);
+			dependencies = (
+				FEFBA3F818ECE7C40065C59D /* PBXTargetDependency */,
+			);
+			name = "ECM Build";
+			productName = "ECM Build";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		FE0AB9C618E4ACFB0092419F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0AB9C518E4ACFB0092419F /* Security.framework */; };
+		FE2D8F2118ECDF9B002E1212 /* felf.sld in Resources */ = {isa = PBXBuildFile; fileRef = FE0AB9C718E4AF140092419F /* felf.sld */; };
+		FE40DE6518D2031E0042D40B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6418D2031E0042D40B /* Foundation.framework */; };
+		FE40DE6718D2031E0042D40B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6618D2031E0042D40B /* CoreGraphics.framework */; };
+		FE40DE6918D2031E0042D40B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6818D2031E0042D40B /* UIKit.framework */; };
+		FE40DE8418D2031E0042D40B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE8318D2031E0042D40B /* XCTest.framework */; };
+		FE40DE8518D2031E0042D40B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6418D2031E0042D40B /* Foundation.framework */; };
+		FE40DE8618D2031E0042D40B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6818D2031E0042D40B /* UIKit.framework */; };
+		FEBC99A9195B741B0062417B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBC99A8195B741B0062417B /* Images.xcassets */; };
+		FECA60101988268E00ADE7CE /* AppIntegrity.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA5FFD1988268E00ADE7CE /* AppIntegrity.m */; };
+		FECA60111988268E00ADE7CE /* SecureData.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA60001988268E00ADE7CE /* SecureData.m */; };
+		FECA60121988268E00ADE7CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECA60011988268E00ADE7CE /* Main.storyboard */; };
+		FECA60131988268E00ADE7CE /* IMSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA60041988268E00ADE7CE /* IMSAppDelegate.m */; };
+		FECA60141988268E00ADE7CE /* IMSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA60061988268E00ADE7CE /* IMSViewController.m */; };
+		FECA60151988268E00ADE7CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FECA60081988268E00ADE7CE /* InfoPlist.strings */; };
+		FECA60161988268E00ADE7CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECA600A1988268E00ADE7CE /* Images.xcassets */; };
+		FECA60171988268E00ADE7CE /* imas_ecm_demo_app-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FECA600B1988268E00ADE7CE /* imas_ecm_demo_app-Info.plist */; };
+		FECA60181988268E00ADE7CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA600D1988268E00ADE7CE /* main.m */; };
+		FECA60191988268E00ADE7CE /* imas_ecm_dynamiclib_builder in Resources */ = {isa = PBXBuildFile; fileRef = FECA600F1988268E00ADE7CE /* imas_ecm_dynamiclib_builder */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEFBA3F718ECE7C40065C59D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE40DE5918D2031E0042D40B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE40DE6018D2031E0042D40B;
+			remoteInfo = imas_ecm_demo_app;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE0AB9C518E4ACFB0092419F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FE0AB9C718E4AF140092419F /* felf.sld */ = {isa = PBXFileReference; lastKnownFileType = file; name = felf.sld; path = imas_ecm_demo_app/felf.sld; sourceTree = "<group>"; };
+		FE40DE6118D2031E0042D40B /* AppIntegrity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIntegrity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE40DE6418D2031E0042D40B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE40DE6618D2031E0042D40B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FE40DE6818D2031E0042D40B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FE40DE8218D2031E0042D40B /* imas_ecm_demo_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imas_ecm_demo_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE40DE8318D2031E0042D40B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FEBC99A8195B741B0062417B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FECA5FFC1988268E00ADE7CE /* AppIntegrity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppIntegrity.h; sourceTree = "<group>"; };
+		FECA5FFD1988268E00ADE7CE /* AppIntegrity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppIntegrity.m; sourceTree = "<group>"; };
+		FECA5FFF1988268E00ADE7CE /* SecureData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureData.h; sourceTree = "<group>"; };
+		FECA60001988268E00ADE7CE /* SecureData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureData.m; sourceTree = "<group>"; };
+		FECA60021988268E00ADE7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FECA60031988268E00ADE7CE /* IMSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSAppDelegate.h; sourceTree = "<group>"; };
+		FECA60041988268E00ADE7CE /* IMSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSAppDelegate.m; sourceTree = "<group>"; };
+		FECA60051988268E00ADE7CE /* IMSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSViewController.h; sourceTree = "<group>"; };
+		FECA60061988268E00ADE7CE /* IMSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSViewController.m; sourceTree = "<group>"; };
+		FECA60091988268E00ADE7CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FECA600A1988268E00ADE7CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FECA600B1988268E00ADE7CE /* imas_ecm_demo_app-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "imas_ecm_demo_app-Info.plist"; sourceTree = "<group>"; };
+		FECA600C1988268E00ADE7CE /* imas_ecm_demo_app-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "imas_ecm_demo_app-Prefix.pch"; sourceTree = "<group>"; };
+		FECA600D1988268E00ADE7CE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FECA600F1988268E00ADE7CE /* imas_ecm_dynamiclib_builder */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = imas_ecm_dynamiclib_builder; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE40DE5E18D2031E0042D40B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0AB9C618E4ACFB0092419F /* Security.framework in Frameworks */,
+				FE40DE6718D2031E0042D40B /* CoreGraphics.framework in Frameworks */,
+				FE40DE6918D2031E0042D40B /* UIKit.framework in Frameworks */,
+				FE40DE6518D2031E0042D40B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE40DE7F18D2031E0042D40B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE40DE8418D2031E0042D40B /* XCTest.framework in Frameworks */,
+				FE40DE8618D2031E0042D40B /* UIKit.framework in Frameworks */,
+				FE40DE8518D2031E0042D40B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE40DE5818D2031E0042D40B = {
+			isa = PBXGroup;
+			children = (
+				FECA5FFA1988268E00ADE7CE /* ecm_demo_app */,
+				FE0AB9C718E4AF140092419F /* felf.sld */,
+				FEBC99A8195B741B0062417B /* Images.xcassets */,
+				FE40DE6318D2031E0042D40B /* Frameworks */,
+				FE40DE6218D2031E0042D40B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE40DE6218D2031E0042D40B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE40DE6118D2031E0042D40B /* AppIntegrity.app */,
+				FE40DE8218D2031E0042D40B /* imas_ecm_demo_appTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE40DE6318D2031E0042D40B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE0AB9C518E4ACFB0092419F /* Security.framework */,
+				FE40DE6418D2031E0042D40B /* Foundation.framework */,
+				FE40DE6618D2031E0042D40B /* CoreGraphics.framework */,
+				FE40DE6818D2031E0042D40B /* UIKit.framework */,
+				FE40DE8318D2031E0042D40B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FECA5FFA1988268E00ADE7CE /* ecm_demo_app */ = {
+			isa = PBXGroup;
+			children = (
+				FECA5FFB1988268E00ADE7CE /* app_integrity */,
+				FECA60011988268E00ADE7CE /* Main.storyboard */,
+				FECA60031988268E00ADE7CE /* IMSAppDelegate.h */,
+				FECA60041988268E00ADE7CE /* IMSAppDelegate.m */,
+				FECA60051988268E00ADE7CE /* IMSViewController.h */,
+				FECA60061988268E00ADE7CE /* IMSViewController.m */,
+				FECA60071988268E00ADE7CE /* support */,
+				FECA600E1988268E00ADE7CE /* tools */,
+			);
+			path = ecm_demo_app;
+			sourceTree = "<group>";
+		};
+		FECA5FFB1988268E00ADE7CE /* app_integrity */ = {
+			isa = PBXGroup;
+			children = (
+				FECA5FFC1988268E00ADE7CE /* AppIntegrity.h */,
+				FECA5FFD1988268E00ADE7CE /* AppIntegrity.m */,
+				FECA5FFE1988268E00ADE7CE /* libs */,
+				FECA5FFF1988268E00ADE7CE /* SecureData.h */,
+				FECA60001988268E00ADE7CE /* SecureData.m */,
+			);
+			path = app_integrity;
+			sourceTree = "<group>";
+		};
+		FECA5FFE1988268E00ADE7CE /* libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		FECA60071988268E00ADE7CE /* support */ = {
+			isa = PBXGroup;
+			children = (
+				FECA60081988268E00ADE7CE /* InfoPlist.strings */,
+				FECA600A1988268E00ADE7CE /* Images.xcassets */,
+				FECA600B1988268E00ADE7CE /* imas_ecm_demo_app-Info.plist */,
+				FECA600C1988268E00ADE7CE /* imas_ecm_demo_app-Prefix.pch */,
+				FECA600D1988268E00ADE7CE /* main.m */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		FECA600E1988268E00ADE7CE /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				FECA600F1988268E00ADE7CE /* imas_ecm_dynamiclib_builder */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE40DE6018D2031E0042D40B /* imas_ecm_demo_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE40DE9318D2031E0042D40B /* Build configuration list for PBXNativeTarget "imas_ecm_demo_app" */;
+			buildPhases = (
+				FE40DE5D18D2031E0042D40B /* Sources */,
+				FE40DE5E18D2031E0042D40B /* Frameworks */,
+				FE40DE5F18D2031E0042D40B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imas_ecm_demo_app;
+			productName = imas_ecm_demo_app;
+			productReference = FE40DE6118D2031E0042D40B /* AppIntegrity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE40DE8118D2031E0042D40B /* imas_ecm_demo_appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE40DE9618D2031E0042D40B /* Build configuration list for PBXNativeTarget "imas_ecm_demo_appTests" */;
+			buildPhases = (
+				FE40DE7E18D2031E0042D40B /* Sources */,
+				FE40DE7F18D2031E0042D40B /* Frameworks */,
+				FE40DE8018D2031E0042D40B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imas_ecm_demo_appTests;
+			productName = imas_ecm_demo_appTests;
+			productReference = FE40DE8218D2031E0042D40B /* imas_ecm_demo_appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE40DE5918D2031E0042D40B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IMS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Gregg Ganley";
+				TargetAttributes = {
+					FE40DE6018D2031E0042D40B = {
+						DevelopmentTeam = M9BLEU3LFV;
+					};
+					FE40DE8118D2031E0042D40B = {
+						TestTargetID = FE40DE6018D2031E0042D40B;
+					};
+				};
+			};
+			buildConfigurationList = FE40DE5C18D2031E0042D40B /* Build configuration list for PBXProject "imas_ecm_demo_app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE40DE5818D2031E0042D40B;
+			productRefGroup = FE40DE6218D2031E0042D40B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE40DE6018D2031E0042D40B /* imas_ecm_demo_app */,
+				FE40DE8118D2031E0042D40B /* imas_ecm_demo_appTests */,
+				FE2D8F2318ECE6AA002E1212 /* ECM Build */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE40DE5F18D2031E0042D40B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECA60121988268E00ADE7CE /* Main.storyboard in Resources */,
+				FECA60161988268E00ADE7CE /* Images.xcassets in Resources */,
+				FECA60151988268E00ADE7CE /* InfoPlist.strings in Resources */,
+				FECA60191988268E00ADE7CE /* imas_ecm_dynamiclib_builder in Resources */,
+				FECA60171988268E00ADE7CE /* imas_ecm_demo_app-Info.plist in Resources */,
+				FE2D8F2118ECDF9B002E1212 /* felf.sld in Resources */,
+				FEBC99A9195B741B0062417B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE40DE8018D2031E0042D40B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FE2D8F2818ECE79D002E1212 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "########\n## Variables\nAPP_DIR_NAME=\"ecm_demo_app\"\nPROD_NAME=\"AppIntegrity\"\nCSFP=$CODESIGNING_FOLDER_PATH/${PROD_NAME}.app\nSECURE_LIB=\"felf.sld\"\n## app to be encrypted\nSENSITIVE_LIB=\"imas_app_check.dylib\"\n## encryption key\nLIB_KEY=\"0U812BFX\"\n\n#######\n## Debug output\necho \"ECM builder - patch in SIZE and FILE HASH\"\necho \"src:\" $SRCROOT\necho \"build_dir:\" $BUILD_DIR\necho \"config build_dir: \" $CONFIGURATION_BUILD_DIR\necho \"PROD NAME and dir:\" $PROD_NAME\necho \"codesign path:\" $CSFP\n\n#######\n## Secure the library\n$SRCROOT/$APP_DIR_NAME/imas_ecm_dynamiclib_builder -f $CSFP/$PROD_NAME -d $SRCROOT/$APP_DIR_NAME/$SENSITIVE_LIB -k $LIB_KEY\n\n#######\n## copy into bundle\necho \"copy SECURE_LIB from:\" $SRCROOT/$PROD_NAME\necho \"to: \" $CSFP/$SECURE_LIB\ncp $SRCROOT/$APP_DIR_NAME/$SECURE_LIB $CSFP\n## copy patched clear text .dylib to this for testing without encryption\n#cp $SRCROOT/ecm_demo_app/imas_app_check.dylib.out $CSFP/imas_app_check.dylib\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE40DE5D18D2031E0042D40B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECA60181988268E00ADE7CE /* main.m in Sources */,
+				FECA60111988268E00ADE7CE /* SecureData.m in Sources */,
+				FECA60101988268E00ADE7CE /* AppIntegrity.m in Sources */,
+				FECA60141988268E00ADE7CE /* IMSViewController.m in Sources */,
+				FECA60131988268E00ADE7CE /* IMSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE40DE7E18D2031E0042D40B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEFBA3F818ECE7C40065C59D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE40DE6018D2031E0042D40B /* imas_ecm_demo_app */;
+			targetProxy = FEFBA3F718ECE7C40065C59D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FECA60011988268E00ADE7CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FECA60021988268E00ADE7CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FECA60081988268E00ADE7CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FECA60091988268E00ADE7CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE2D8F2418ECE6AA002E1212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gregg Ganley (W59C4483ZP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gregg Ganley (W59C4483ZP)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FE2D8F2518ECE6AA002E1212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gregg Ganley (W59C4483ZP)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FE40DE9118D2031E0042D40B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "BD994DE2-705E-4FB4-9D62-9D6906020626";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE40DE9218D2031E0042D40B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "BD994DE2-705E-4FB4-9D62-9D6906020626";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE40DE9418D2031E0042D40B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ecm_demo_app/support/imas_ecm_demo_app-Prefix.pch";
+				INFOPLIST_FILE = "ecm_demo_app/support/imas_ecm_demo_app-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/ecm_demo_app",
+					"$(SRCROOT)/../../vendor",
+					"$(PROJECT_DIR)/ecm_demo_app",
+				);
+				PRODUCT_NAME = AppIntegrity;
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/../vendor/securefoundation/SecureFoundation;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FE40DE9518D2031E0042D40B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ecm_demo_app/support/imas_ecm_demo_app-Prefix.pch";
+				INFOPLIST_FILE = "ecm_demo_app/support/imas_ecm_demo_app-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/ecm_demo_app",
+					"$(SRCROOT)/../../vendor",
+					"$(PROJECT_DIR)/ecm_demo_app",
+				);
+				PRODUCT_NAME = imas_ecm_demo_app;
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/../vendor/securefoundation/SecureFoundation;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FE40DE9718D2031E0042D40B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/imas_ecm_demo_app.app/ecm_demo_app";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ecm_demo_app/support/imas_ecm_demo_app-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ecm_demo_appTests/support/imas_ecm_demo_appTests-Info.plist";
+				INSTALL_PATH = "";
+				PRODUCT_NAME = imas_ecm_demo_appTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FE40DE9818D2031E0042D40B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/imas_ecm_demo_app.app/ecm_demo_app";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ecm_demo_app/support/imas_ecm_demo_app-Prefix.pch";
+				INFOPLIST_FILE = "ecm_demo_appTests/support/imas_ecm_demo_appTests-Info.plist";
+				INSTALL_PATH = "";
+				PRODUCT_NAME = imas_ecm_demo_appTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE2D8F2718ECE6AA002E1212 /* Build configuration list for PBXAggregateTarget "ECM Build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE2D8F2418ECE6AA002E1212 /* Debug */,
+				FE2D8F2518ECE6AA002E1212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE40DE5C18D2031E0042D40B /* Build configuration list for PBXProject "imas_ecm_demo_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE40DE9118D2031E0042D40B /* Debug */,
+				FE40DE9218D2031E0042D40B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE40DE9318D2031E0042D40B /* Build configuration list for PBXNativeTarget "imas_ecm_demo_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE40DE9418D2031E0042D40B /* Debug */,
+				FE40DE9518D2031E0042D40B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE40DE9618D2031E0042D40B /* Build configuration list for PBXNativeTarget "imas_ecm_demo_appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE40DE9718D2031E0042D40B /* Debug */,
+				FE40DE9818D2031E0042D40B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE40DE5918D2031E0042D40B /* Project object */;
+}

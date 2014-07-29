@@ -109,8 +109,8 @@ void doAppIntegrity() {
     unsigned int trusted_app_size;
     [trusted_app_size_data getBytes:&trusted_app_size length:sizeof(trusted_app_size)];
     
-    NSLog(@"trusted GG app size hex:%@", trusted_app_size_data);
-    NSLog(@"trusted GG app size:%d", trusted_app_size);
+    NSLog(@"trusted app size hex:%@", trusted_app_size_data);
+    NSLog(@"trusted app size:%d", trusted_app_size);
     
     
     // compare computed sha hash to passed in value

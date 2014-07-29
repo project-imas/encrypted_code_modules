@@ -226,6 +226,7 @@
 			buildPhases = (
 				FE40DE5D18D2031E0042D40B /* Sources */,
 				FE40DE5E18D2031E0042D40B /* Frameworks */,
+				FE253C7C19883C73009F5FF8 /* ShellScript */,
 				FE40DE5F18D2031E0042D40B /* Resources */,
 			);
 			buildRules = (
@@ -334,6 +335,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		FE253C7C19883C73009F5FF8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "########\n## Variables\nAPP_DIR_NAME=\"ecm_demo_app\"\nSECURE_LIB_PATH=\"app_integrity/libs\"\nSECURE_LIB=\"felf.sld\"\n\ntouch $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB";
+		};
 		FE2D8F2818ECE79D002E1212 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

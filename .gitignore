@@ -27,3 +27,4 @@ build.output
 pkg
 DerivedData/
 build/
+*.dylib.out

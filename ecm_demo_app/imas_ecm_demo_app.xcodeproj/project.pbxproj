@@ -23,6 +23,7 @@
 
 /* Begin PBXBuildFile section */
 		FE0AB9C618E4ACFB0092419F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0AB9C518E4ACFB0092419F /* Security.framework */; };
+		FE253C7F1988535F009F5FF8 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = FE253C7E1988535F009F5FF8 /* Icon-72.png */; };
 		FE40DE6518D2031E0042D40B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6418D2031E0042D40B /* Foundation.framework */; };
 		FE40DE6718D2031E0042D40B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6618D2031E0042D40B /* CoreGraphics.framework */; };
 		FE40DE6918D2031E0042D40B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6818D2031E0042D40B /* UIKit.framework */; };
@@ -70,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		FE0AB9C518E4ACFB0092419F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FE253C7E1988535F009F5FF8 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Images.xcassets/AppIcon.appiconset/Icon-72.png"; sourceTree = "<group>"; };
 		FE40DE6118D2031E0042D40B /* imas_ecm_demo_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imas_ecm_demo_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE40DE6418D2031E0042D40B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FE40DE6618D2031E0042D40B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,6 +127,7 @@
 		FE40DE5818D2031E0042D40B = {
 			isa = PBXGroup;
 			children = (
+				FE253C7E1988535F009F5FF8 /* Icon-72.png */,
 				FEB14A8019882AA1002DBF73 /* SecureFoundation.xcodeproj */,
 				FECA5FFA1988268E00ADE7CE /* ecm_demo_app */,
 				FEBC99A8195B741B0062417B /* Images.xcassets */,
@@ -320,6 +323,7 @@
 				FECA60151988268E00ADE7CE /* InfoPlist.strings in Resources */,
 				FECA60191988268E00ADE7CE /* imas_ecm_dynamiclib_builder in Resources */,
 				FECA60171988268E00ADE7CE /* imas_ecm_demo_app-Info.plist in Resources */,
+				FE253C7F1988535F009F5FF8 /* Icon-72.png in Resources */,
 				FEA6026A19882E6B000F274E /* felf.sld in Resources */,
 				FEBC99A9195B741B0062417B /* Images.xcassets in Resources */,
 			);

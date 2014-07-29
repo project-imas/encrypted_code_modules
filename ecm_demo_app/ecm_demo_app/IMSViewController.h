@@ -13,4 +13,5 @@
 - (IBAction)performAppIntegrity:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextView *detailedStatusOut;
 @property (weak, nonatomic) IBOutlet UILabel *statusOut;
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
 @end

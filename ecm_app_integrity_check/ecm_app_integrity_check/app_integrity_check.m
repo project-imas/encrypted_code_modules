@@ -115,14 +115,14 @@ void doAppIntegrity() {
     
     // compare computed sha hash to passed in value
     if (trusted_app_size != app_file_size)
-        NSLog(@"App Integrity FAIL - file size mismatch");
+        NSLog(@"App Integrity FAIL - file size MISMATCH");
     else
-        NSLog(@"App Integrity PASS - file size match");
+        NSLog(@"App Integrity PASS - file size MATCH");
     
     if ([trusted_app_sig isEqualToData:app_sig])
-        NSLog(@"App Integrity PASS - signature match");
+        NSLog(@"App Integrity PASS - signature MATCH");
     else
-        NSLog(@"App Integrity FAIL - signature mismatch");
+        NSLog(@"App Integrity FAIL - signature MISMATCH");
 
     
     

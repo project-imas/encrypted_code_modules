@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [AppIntegrity do_app_integrity];
+    //[AppIntegrity do_app_integrity];
     
     
     return YES;

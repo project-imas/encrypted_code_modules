@@ -63,7 +63,7 @@
 
 //** do_app_integrity
 //** read .sld file and decrypt, write file back out
-+ (int) do_app_integrity {
++ (int) do_app_integrity: (NSString *)pass {
   
     //** read *this* APPS executable file
     NSFileHandle      *inFile;
@@ -102,7 +102,7 @@
     [inFile closeFile];
     
     NSLog(@"decrypting ECM lib ...");
-    NSData *decrypted_plain_text = [SecureData decryptData:cipher_txt password:@"0U812BFX" error:&error];
+    NSData *decrypted_plain_text = [SecureData decryptData:cipher_txt password:pass error:&error];
     if (error) {
         NSLog(@"decrypt error: %@", error);
         return -1;

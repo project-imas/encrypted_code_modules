@@ -14,4 +14,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *detailedStatusOut;
 @property (weak, nonatomic) IBOutlet UILabel *statusOut;
 @property (weak, nonatomic) IBOutlet UIImageView *icon;
+@property (weak, nonatomic) IBOutlet UITextField *unlockText;
+@property (weak, nonatomic) IBOutlet UILabel *unlockLabel;
 @end

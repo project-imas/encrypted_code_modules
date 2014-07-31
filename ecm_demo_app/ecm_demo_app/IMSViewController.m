@@ -37,8 +37,14 @@
 
 - (IBAction)performAppIntegrity:(id)sender {
     
-    int success = [AppIntegrity do_app_integrity];
+    int success = [AppIntegrity do_app_integrity:[[self unlockText] text]];
     
+    [self.detailedStatusOut setText:@""];
+    [self.unlockText setText:@""];
+    self.unlockText.hidden = YES;
+    self.unlockLabel.hidden = YES;
+    [self.view endEditing:YES];
+
     [self.detailedStatusOut setText:@""];
     
 //    BOOL status = true;

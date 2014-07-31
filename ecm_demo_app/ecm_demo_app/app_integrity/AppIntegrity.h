@@ -9,6 +9,6 @@
 
 @interface AppIntegrity : NSObject
 
-+ (int) do_app_integrity;
++ (int) do_app_integrity: (NSString *)pass;
 
 @end

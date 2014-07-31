@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1358BC1D-1AC0-455B-8C19-7BDC894B9ECA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>imas_ecm_demo_app</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1DB8DF5F-61F4-4F4C-879C-3E7171D039A3</key>
+		<string>ssh://github.com/project-imas/encrypted_code_modules.git</string>
+		<key>E5712EA7-C56A-4462-991C-8145F23C5B89</key>
+		<string>ssh://github.com/project-imas/securefoundation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ecm_demo_app/imas_ecm_demo_app.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1DB8DF5F-61F4-4F4C-879C-3E7171D039A3</key>
+		<string>../../..</string>
+		<key>E5712EA7-C56A-4462-991C-8145F23C5B89</key>
+		<string>../../../vendor/securefoundation</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/project-imas/encrypted_code_modules.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1DB8DF5F-61F4-4F4C-879C-3E7171D039A3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1DB8DF5F-61F4-4F4C-879C-3E7171D039A3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>encrypted_code_modules</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E5712EA7-C56A-4462-991C-8145F23C5B89</string>
+			<key>IDESourceControlWCCName</key>
+			<string>securefoundation</string>
+		</dict>
+	</array>
+</dict>
+</plist>

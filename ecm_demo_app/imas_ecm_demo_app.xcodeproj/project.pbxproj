@@ -365,7 +365,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "########\n## Variables\nAPP_DIR_NAME=\"ecm_demo_app\"\nPROD_NAME=\"imas_ecm_demo_app\"\nCSFP=$CODESIGNING_FOLDER_PATH/${PROD_NAME}.app\nSECURE_LIB_PATH=\"app_integrity/libs\"\nSECURE_LIB=\"felf.sld\"\n## app to be encrypted\nSENSITIVE_LIB=$SECURE_LIB_PATH/\"ecm_app_integrity_check.dylib\"\n## encryption key\nLIB_KEY=\"0U812BFX\"\n\n#######\n## Debug output\necho \"ECM builder - patch in SIZE and FILE HASH\"\necho \"src:\" $SRCROOT\necho \"build_dir:\" $BUILD_DIR\necho \"config build_dir: \" $CONFIGURATION_BUILD_DIR\necho \"PROD NAME and dir:\" $PROD_NAME\necho \"codesign path:\" $CSFP\n\n#######\n## Secure the library\n$SRCROOT/$APP_DIR_NAME/tools/imas_ecm_dynamiclib_builder -f $CSFP/$PROD_NAME -d $SRCROOT/$APP_DIR_NAME/$SENSITIVE_LIB -k $LIB_KEY\n\n#######\n## copy into bundle\necho \"copy SECURE_LIB from:\" $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB\necho \"to: \" $CSFP/$SECURE_LIB\ncp $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB  $CSFP\n## copy patched clear text .dylib to this for testing without encryption\n#cp $SRCROOT/ecm_demo_app/imas_app_check.dylib.out $CSFP/imas_app_check.dylib\n";
+			shellScript = "########\n## Variables\nAPP_DIR_NAME=\"ecm_demo_app\"\nPROD_NAME=\"imas_ecm_demo_app\"\nCSFP=$CODESIGNING_FOLDER_PATH/${PROD_NAME}.app\nSECURE_LIB_PATH=\"app_integrity/libs\"\nSECURE_LIB=\"felf.sld\"\n## app to be encrypted\nSENSITIVE_LIB=$SECURE_LIB_PATH/\"ecm_app_integrity_check.dylib\"\n## encryption key\nLIB_KEY=\"0U812BFX\"\n\n#######\n## Debug output\necho \"ECM builder - patch in SIZE and FILE HASH\"\necho \"src:\" $SRCROOT\necho \"build_dir:\" $BUILD_DIR\necho \"config build_dir: \" $CONFIGURATION_BUILD_DIR\necho \"PROD NAME and dir:\" $PROD_NAME\necho \"codesign path:\" $CSFP\n\n#######\n## Secure the library\n$SRCROOT/$APP_DIR_NAME/tools/imas_ecm_dynamiclib_builder -f $CSFP/$PROD_NAME -d $SRCROOT/$APP_DIR_NAME/$SENSITIVE_LIB -k $LIB_KEY\n\n\n#######\n## copy into bundle\necho \"copy SECURE_LIB from:\" $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB\necho \"to: \" $CSFP/$SECURE_LIB\ncp $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB  $CSFP\n## copy patched clear text .dylib to this for testing without encryption\n##cp $SRCROOT/ecm_demo_app/imas_app_check.dylib.out $CSFP/imas_app_check.dylib\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -427,7 +427,7 @@
 		FE2D8F2418ECE6AA002E1212 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Gregg Ganley (W59C4483ZP)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gavin Black (88N982P346)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gregg Ganley (W59C4483ZP)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -436,7 +436,7 @@
 		FE2D8F2518ECE6AA002E1212 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Gregg Ganley (W59C4483ZP)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gavin Black (88N982P346)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -458,7 +458,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gavin Black (88N982P346)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gavin Black (88N982P346)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -476,7 +477,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "BD994DE2-705E-4FB4-9D62-9D6906020626";
+				PROVISIONING_PROFILE = "2B675924-F24A-4C2E-99A5-E89C0DD9556A";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -498,7 +499,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gavin Black (88N982P346)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -509,7 +510,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PROVISIONING_PROFILE = "BD994DE2-705E-4FB4-9D62-9D6906020626";
+				PROVISIONING_PROFILE = "2B675924-F24A-4C2E-99A5-E89C0DD9556A";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -521,8 +522,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gavin Black (88N982P346)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gavin Black (88N982P346)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ecm_demo_app/support/imas_ecm_demo_app-Prefix.pch";
 				INFOPLIST_FILE = "ecm_demo_app/support/imas_ecm_demo_app-Info.plist";
@@ -534,7 +535,7 @@
 					"$(PROJECT_DIR)/ecm_demo_app",
 				);
 				PRODUCT_NAME = imas_ecm_demo_app;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "2B675924-F24A-4C2E-99A5-E89C0DD9556A";
 				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/../vendor/securefoundation/SecureFoundation;
 				WRAPPER_EXTENSION = app;
 			};
@@ -546,8 +547,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gavin Black (88N982P346)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gavin Black (88N982P346)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ecm_demo_app/support/imas_ecm_demo_app-Prefix.pch";
 				INFOPLIST_FILE = "ecm_demo_app/support/imas_ecm_demo_app-Info.plist";
@@ -559,7 +560,7 @@
 					"$(PROJECT_DIR)/ecm_demo_app",
 				);
 				PRODUCT_NAME = imas_ecm_demo_app;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "2B675924-F24A-4C2E-99A5-E89C0DD9556A";
 				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/../vendor/securefoundation/SecureFoundation;
 				WRAPPER_EXTENSION = app;
 			};

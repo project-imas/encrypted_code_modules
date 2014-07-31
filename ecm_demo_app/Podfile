@@ -1,0 +1,4 @@
+platform :ios, '7.1'
+pod 'SecureFoundation', :git => 'https://github.com/project-imas/securefoundation.git'
+pod 'AppPassword', :git => 'https://github.com/project-imas/app-password.git'
+

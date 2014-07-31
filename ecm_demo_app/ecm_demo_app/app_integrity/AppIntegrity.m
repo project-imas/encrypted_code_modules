@@ -63,7 +63,7 @@
 
 //** do_app_integrity
 //** read .sld file and decrypt, write file back out
-+ (void) do_app_integrity {
++ (int) do_app_integrity {
   
     //** read *this* APPS executable file
     NSFileHandle      *inFile;
@@ -93,7 +93,7 @@
     
     if ( [fileMgr fileExistsAtPath:filePath] == NO ) {
         NSLog(@"File does not exist!");
-        exit(1);
+        return -1;
     }
     inFile = [NSFileHandle fileHandleForReadingAtPath: filePath];
     
@@ -103,7 +103,10 @@
     
     NSLog(@"decrypting ECM lib ...");
     NSData *decrypted_plain_text = [SecureData decryptData:cipher_txt password:@"0U812BFX" error:&error];
-    if (error) NSLog(@"decrypt error: %@", error);
+    if (error) {
+        NSLog(@"decrypt error: %@", error);
+        return -1;
+    }
     
     ///    /var/mobile/Applications/7C3BA57E-0C08-454B-B4D0-C078B7C3BE16/Documents/APP_INT_LIBNAME
     NSLog(@"create ECM dylib file in docs dir...");
@@ -131,12 +134,13 @@
                                        };
             NSLog(@"%@", userInfo);
         }
+        return -1;
     }
     
     [outFile closeFile];
     if ( [fileMgr fileExistsAtPath:decrypted_dyn_plain_txt_filePath] == NO ) {
         NSLog(@"File does not exist!");
-        exit(1);
+        return -1;
     }
 
     /*
@@ -181,25 +185,35 @@
     //const char *dylibPath = [docPathFile cStringUsingEncoding:NSASCIIStringEncoding];
     
     //** read and open the dynamic library
-    void *libHandle = dlVolatileOpen(docPathFile);
+//    void *libHandle = dlVolatileOpen(docPathFile);
+    void * libHandle = dlopen([docPathFile UTF8String], RTLD_NOW);
     
     const char* msg = dlerror();
-    if (msg) NSLog(@"\n****\n%s\n****\n", msg);
+    if (msg) {
+        NSLog(@"\n****\n%s\n****\n", msg);
+        return -1;
+    }
     
+    int ret = 0;
     //** make a function call into the newly loaded library
     NSLog(@"calling into .dylib, performing intergrity check");
     if (libHandle != NULL) {
-        void (*init)() = dlsym(libHandle, "doAppIntegrity");
+        
+        int (*init)() = dlsym(libHandle, "doAppIntegrity");
         if (init != NULL)  {
-            init();
+            if(init() != 0)
+                ret = -1;
         }
         NSLog(@"Shreding file on close!");
-        dlVolatileClose(libHandle);
+//        dlVolatileClose(libHandle);
+        dlclose(libHandle);
     }
     else {
         NSLog(@"libHandle is NULL - check path!!");
+        ret = -1;
     }
     
+    return ret;
     
 }
 

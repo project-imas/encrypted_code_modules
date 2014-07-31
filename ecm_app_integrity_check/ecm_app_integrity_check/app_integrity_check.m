@@ -17,11 +17,6 @@ unsigned char sha256_placeholder[] =
 //unsigned int file_size_placeholder = 0xdeadbeef;
 unsigned char file_size_placeholder[] = { 0xde, 0xad, 0xbe, 0xef };
 
-
-
-
-
-
 NSString * helloWorld(NSString *s) {
     NSLog(@"helloWorld 22: %@", s);
     
@@ -60,7 +55,7 @@ NSData *get_fileSize() {
 
 #define AppName @"imas_ecm_demo_app"
 
-void doAppIntegrity() {
+int doAppIntegrity() {
     
     NSLog(@"  ******************************");
     NSLog(@"  Here in iMASAppIntegrity DYLIB");
@@ -82,7 +77,7 @@ void doAppIntegrity() {
     
     if ( [fileMgr fileExistsAtPath:filePath] == NO ) {
         NSLog(@"File does not exist!");
-        exit(1);
+        return -1;
     }
     
     //** FILE SIZE
@@ -113,19 +108,24 @@ void doAppIntegrity() {
     NSLog(@"trusted app size:%d", trusted_app_size);
     
     
+    int ret = 0;
     // compare computed sha hash to passed in value
-    if (trusted_app_size != app_file_size)
+    if (trusted_app_size != app_file_size) {
         NSLog(@"App Integrity FAIL - file size MISMATCH");
-    else
+        ret = -1;
+    }
+    else {
         NSLog(@"App Integrity PASS - file size MATCH");
-    
-    if ([trusted_app_sig isEqualToData:app_sig])
+    }
+    if ([trusted_app_sig isEqualToData:app_sig]){
         NSLog(@"App Integrity PASS - signature MATCH");
-    else
+    }
+    else {
         NSLog(@"App Integrity FAIL - signature MISMATCH");
-
+        ret = -1;
+    }
     
-    
+    return ret;
     
     // read .dylib, decode and write to file
 }

@@ -9,4 +9,4 @@
 NSString *helloWorld(NSString *s);
 NSData   *get_sha256();
 NSData   *get_fileSize();
-void doAppIntegrity();
+int doAppIntegrity();

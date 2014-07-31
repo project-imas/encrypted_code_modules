@@ -37,11 +37,11 @@
 
 - (IBAction)performAppIntegrity:(id)sender {
     
-    [AppIntegrity do_app_integrity];
+    int success = [AppIntegrity do_app_integrity];
     
     [self.detailedStatusOut setText:@""];
     
-    BOOL status = true;
+//    BOOL status = true;
     
     //** READ APPLE System Logs facility (ASL)
     //** display contents in UI
@@ -73,8 +73,10 @@
         [self.detailedStatusOut setText:[_detailedStatusOut.text stringByAppendingString:@"\n"]];
         
         //** hacky... search for string " match", if found mark as SUCCESS else fail
-        if ([[tmpDict objectForKey:@"Message"] rangeOfString:@"MISMATCH"].location != NSNotFound)
-            status = false;
+//        if ([[tmpDict objectForKey:@"Message"] rangeOfString:@"MISMATCH"].location != NSNotFound)
+//            status = false;
+        
+        // gave do_app_integrity success/fail return value instead.
         
     }
     aslresponse_free(r);
@@ -83,12 +85,8 @@
     [self.detailedStatusOut setText:[_detailedStatusOut.text stringByAppendingString:@"\n"]];
     [self.detailedStatusOut setText:[_detailedStatusOut.text stringByAppendingString:@"\n"]];
     [self.detailedStatusOut scrollRangeToVisible:NSMakeRange([_detailedStatusOut.text length] - 1,0)];
-    
-    if (status)
-        _statusOut.text = @"Success!";
-    else
-        _statusOut.text = @"Fail!";
-    
+
+    _statusOut.text = (success == 0)?@"Success!":@"Fail!";
 }
 
 

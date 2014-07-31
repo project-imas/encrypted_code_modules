@@ -141,7 +141,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Gavin Black (88N982P346)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jase Hannah (VDB867F4H6)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -158,7 +158,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MACH_O_TYPE = mh_dylib;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "2B675924-F24A-4C2E-99A5-E89C0DD9556A";
+				PROVISIONING_PROFILE = "5EF083A2-75FF-467B-8A18-3CAE66073561";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -172,7 +172,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Gavin Black (88N982P346)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jase Hannah (VDB867F4H6)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -181,7 +181,7 @@
 				INSTALL_PATH = "@executble_path/";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MACH_O_TYPE = mh_dylib;
-				PROVISIONING_PROFILE = "2B675924-F24A-4C2E-99A5-E89C0DD9556A";
+				PROVISIONING_PROFILE = "5EF083A2-75FF-467B-8A18-3CAE66073561";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -191,8 +191,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Gavin Black (88N982P346)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jase Hannah (VDB867F4H6)";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DSTROOT = /tmp/ecm_app_integrity_check.dst;
@@ -209,7 +208,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ecm_app_integrity_check;
-				PROVISIONING_PROFILE = "2B675924-F24A-4C2E-99A5-E89C0DD9556A";
+				PROVISIONING_PROFILE = "5EF083A2-75FF-467B-8A18-3CAE66073561";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SYMROOT = build;
@@ -220,8 +219,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Gavin Black (88N982P346)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jase Hannah (VDB867F4H6)";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DSTROOT = /tmp/ecm_app_integrity_check.dst;
@@ -238,7 +236,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ecm_app_integrity_check;
-				PROVISIONING_PROFILE = "2B675924-F24A-4C2E-99A5-E89C0DD9556A";
+				PROVISIONING_PROFILE = "5EF083A2-75FF-467B-8A18-3CAE66073561";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SYMROOT = build;

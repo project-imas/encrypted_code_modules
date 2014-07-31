@@ -10,17 +10,37 @@
 
 #import <Foundation/Foundation.h>
 #import "AppIntegrity.h"
+#import "APViewController.h"
 
 
 
 @implementation IMSAppDelegate
 
 
+- (void)performLaunchSteps {
+    APViewController *apc = [[APViewController alloc] init];
+    apc.delegate = self;
+    
+    self.window.rootViewController = apc; //navController;
+    [self.window makeKeyAndVisible];
+}
+
+- (void)validUserAccess:(APViewController *)controller {
+    NSLog(@"validUserAccess - Delegate");
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    id contID = [storyboard instantiateViewControllerWithIdentifier:@"IMSViewController"];
+    
+    self.window.rootViewController = contID;
+    [self.window makeKeyAndVisible];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     //[AppIntegrity do_app_integrity];
-    
+    [self performLaunchSteps];
+
     
     return YES;
 }

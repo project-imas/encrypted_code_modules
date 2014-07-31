@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Complex Pass-->
+        <scene sceneID="nsm-ux-bHB">
+            <objects>
+                <viewController storyboardIdentifier="APComplexPass" wantsFullScreenLayout="YES" id="Ftn-Ap-YcP" customClass="APComplexPass" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XLx-j4-nu7"/>
+                        <viewControllerLayoutGuide type="bottom" id="BWy-JS-s4t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="efE-xE-MTu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000000000000009" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OfT-O8-ae9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tml-fi-sbN" userLabel="Phrase Subtitle Label">
+                                <rect key="frame" x="20" y="143" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="C7o-ej-xBM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Set Passcode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZq-mM-0KE" userLabel="Phrase Title Label">
+                                <rect key="frame" x="20" y="53" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4nm-GY-ryg" userLabel="Phrase">
+                                <rect key="frame" x="68" y="99" width="184" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="Mbb-B2-Phf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5H-Y5-ODs">
+                                <rect key="frame" x="238" y="6" width="74" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="7fh-10-afm"/>
+                                    <constraint firstAttribute="width" constant="74" id="o2T-MI-CFR"/>
+                                </constraints>
+                                <state key="normal" title="Forgot?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgot:" destination="Ftn-Ap-YcP" eventType="touchUpInside" id="xXd-Ny-8Zs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="S5H-Y5-ODs" secondAttribute="trailing" constant="8" id="FL6-Xh-GsB"/>
+                            <constraint firstItem="tml-fi-sbN" firstAttribute="leading" secondItem="efE-xE-MTu" secondAttribute="leading" constant="20" symbolic="YES" id="Gg6-VN-sGK"/>
+                            <constraint firstItem="OfT-O8-ae9" firstAttribute="bottom" secondItem="efE-xE-MTu" secondAttribute="bottom" id="IrH-PC-5KO"/>
+                            <constraint firstItem="rZq-mM-0KE" firstAttribute="leading" secondItem="efE-xE-MTu" secondAttribute="leading" constant="20" symbolic="YES" id="KT5-aI-hfk"/>
+                            <constraint firstItem="rZq-mM-0KE" firstAttribute="top" secondItem="efE-xE-MTu" secondAttribute="top" constant="53" id="RH8-TV-s60"/>
+                            <constraint firstItem="tml-fi-sbN" firstAttribute="top" secondItem="efE-xE-MTu" secondAttribute="top" constant="143" id="U2n-sI-JvR"/>
+                            <constraint firstItem="4nm-GY-ryg" firstAttribute="top" secondItem="efE-xE-MTu" secondAttribute="top" constant="99" id="Udt-OR-UTM"/>
+                            <constraint firstItem="S5H-Y5-ODs" firstAttribute="top" secondItem="efE-xE-MTu" secondAttribute="top" constant="6" id="VKD-6a-B5z"/>
+                            <constraint firstItem="OfT-O8-ae9" firstAttribute="leading" secondItem="efE-xE-MTu" secondAttribute="leading" id="ajh-tv-6mI"/>
+                            <constraint firstItem="OfT-O8-ae9" firstAttribute="trailing" secondItem="efE-xE-MTu" secondAttribute="trailing" id="cpl-se-Rrt"/>
+                            <constraint firstItem="tml-fi-sbN" firstAttribute="centerX" secondItem="4nm-GY-ryg" secondAttribute="centerX" id="fyH-r5-0KS"/>
+                            <constraint firstItem="OfT-O8-ae9" firstAttribute="top" secondItem="efE-xE-MTu" secondAttribute="top" id="ote-y0-jbX"/>
+                            <constraint firstAttribute="trailing" secondItem="rZq-mM-0KE" secondAttribute="trailing" constant="20" symbolic="YES" id="vqI-7P-7fu"/>
+                            <constraint firstAttribute="trailing" secondItem="tml-fi-sbN" secondAttribute="trailing" constant="20" symbolic="YES" id="waR-s2-9Db"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="phraseSubtitleLabel" destination="tml-fi-sbN" id="FLW-Ly-K4F"/>
+                        <outlet property="phraseTextField" destination="4nm-GY-ryg" id="gsO-fc-34D"/>
+                        <outlet property="phraseTitleLabel" destination="rZq-mM-0KE" id="iaY-je-eOU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Doy-VS-NQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="14"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

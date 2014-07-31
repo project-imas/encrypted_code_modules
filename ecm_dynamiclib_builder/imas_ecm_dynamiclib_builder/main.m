@@ -210,6 +210,14 @@ int main(int argc, const char * argv[])
         system(swap_cmd);
         
 
+        // Resign code
+        char resign[1024];
+
+        sprintf(resign, "codesign -fs \"iPhone Developer\" %s", dynFilePath_out_str);
+        NSLog(@"Resign: %s", resign);
+
+        system(resign);
+        
         
 #if 0
         //** create a cipherKey

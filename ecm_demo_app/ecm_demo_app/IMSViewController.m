@@ -8,6 +8,7 @@
 
 #import "IMSViewController.h"
 #import "AppIntegrity.h"
+#import "IMSKeychain.h"
 #include <asl.h>
 
 @interface IMSViewController ()
@@ -19,6 +20,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Don't show the unlock prompt if we have one stored
+    NSString* unlockVal = [IMSKeychain securePasswordForService:@"ustorage" account:@"uaccount"];
+    if(unlockVal) {
+        self.unlockText.hidden = YES;
+        self.unlockLabel.hidden = YES;
+    }
 	// Do any additional setup after loading the view, typically from a nib.
     
     //UIImageView *imageHolder = [[UIImageView alloc] initWithFrame:CGRectMake(40, 200, 280, 192)];
@@ -35,17 +43,34 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
 - (IBAction)performAppIntegrity:(id)sender {
+    // Grab the dylib unlock value from the keychain or textbox
+    BOOL hadValue = YES;
+    NSString* unlockVal = [IMSKeychain securePasswordForService:@"ustorage" account:@"uaccount"];
+    if(!unlockVal) {
+        unlockVal = [[self unlockText] text];
+        hadValue = NO;
+    }
     
-    int success = [AppIntegrity do_app_integrity:[[self unlockText] text]];
+    NSLog(@"unlockVal: %@", unlockVal);
     
+    // Clear the GUI
     [self.detailedStatusOut setText:@""];
     [self.unlockText setText:@""];
     self.unlockText.hidden = YES;
     self.unlockLabel.hidden = YES;
-    [self.view endEditing:YES];
-
     [self.detailedStatusOut setText:@""];
+
+    [self.view endEditing:YES];
+    
+    int success = [AppIntegrity do_app_integrity:unlockVal];
+    
+    // Only store value if it's not there and the dylib worked
+    if(!hadValue && success == 0) {
+        [IMSKeychain setSecurePassword:unlockVal forService:@"ustorage" account:@"uaccount"];
+    }
     
 //    BOOL status = true;
     

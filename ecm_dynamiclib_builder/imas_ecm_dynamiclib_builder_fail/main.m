@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Gregg Ganley. All rights reserved.
 //
 
-#define FAIL_TEST 1
-
 #import <Foundation/Foundation.h>
 #import <CommonCrypto/CommonDigest.h>
 #import "SecureData.h"
@@ -23,9 +21,9 @@ void usage(void)
 }
 
 @interface FileOps : NSObject
- 
+
 +(void) writeDataToFile: (NSString *)fname
-                  dbuff:(NSData*)dbuff;
+dbuff:(NSData*)dbuff;
 
 @end
 
@@ -33,7 +31,7 @@ void usage(void)
 
 
 +(void) writeDataToFile: (NSString *)fname
-                  dbuff:(NSData *)dbuff
+dbuff:(NSData *)dbuff
 {
     NSFileHandle   *outFile;
     
@@ -87,7 +85,7 @@ int main(int argc, const char * argv[])
         NSLog(@"stringArg = %@", [args stringForKey:@"k"]);
         appkey = [args stringForKey:@"k"];
         
-
+        
         if (!hostAppFileName) {
             NSLog(@"no host app file name specified");
             usage();
@@ -112,7 +110,7 @@ int main(int argc, const char * argv[])
             NSLog(@"app key is: %@\n", appkey);
         }
         
-
+        
         //** read HOST APP file
         NSFileHandle        *inFile;
         
@@ -135,16 +133,17 @@ int main(int argc, const char * argv[])
         
         //** FILE SIZE
         unsigned int app_file_size;
-        app_file_size = (int)[plain_txt length];
+        app_file_size = (int)[plain_txt length]+1;
         NSLog(@"APP file size: %d", app_file_size);
-
+        
         //** FILE HASH SIG
         unsigned char hash[CC_SHA256_DIGEST_LENGTH];
         CC_SHA256([plain_txt bytes], (unsigned int)[plain_txt length], hash);
+        memset(hash, 0, 1);
         NSData *app_sig = [NSData dataWithBytes:hash  length:CC_SHA1_DIGEST_LENGTH];
         NSLog(@"sha_hash_val 20 bytes: %@", app_sig);
         
-
+        
         //ADD values to .dylib file and output to .dylib.out file
         NSString *dynFilePath = [NSString stringWithFormat:@"%@", dynamicLibFileName];
         char dynFilePath_in_str[512];
@@ -169,20 +168,20 @@ int main(int argc, const char * argv[])
               (uint8_t)((app_file_size >> 8) & 0xff),
               (uint8_t)((app_file_size >> 16) & 0xff),
               (uint8_t)((app_file_size >> 24) & 0xff), dynFilePath_in_str, dynFilePath_tempStr);
-
+        
         sprintf(swap_cmd, "perl -pne \'s/\\xDE\\xAD\\xBE\\xEF/\\x%x\\x%x\\x%x\\x%x/g\' < %s > %s",
-              (uint8_t)((app_file_size >> 0) & 0xff),
-              (uint8_t)((app_file_size >> 8) & 0xff),
-              (uint8_t)((app_file_size >> 16) & 0xff),
-              (uint8_t)((app_file_size >> 24) & 0xff), dynFilePath_in_str, dynFilePath_tempStr);
-
+                (uint8_t)((app_file_size >> 0) & 0xff),
+                (uint8_t)((app_file_size >> 8) & 0xff),
+                (uint8_t)((app_file_size >> 16) & 0xff),
+                (uint8_t)((app_file_size >> 24) & 0xff), dynFilePath_in_str, dynFilePath_tempStr);
+        
         char tmp[1024];
         sprintf(tmp, "; mv %s %s", dynFilePath_tempStr, dynFilePath_out_str);
         strcat(swap_cmd, tmp);
         NSLog(@"swap_cmd: ...%s...", swap_cmd);
         system(swap_cmd);
         
-
+        
         //***************
         //** add FILE HASH SIG
         strcpy(swap_cmd, "perl -pne \'s/\\xAA\\xBB\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xAA\\xBB\\xAA/");
@@ -198,7 +197,7 @@ int main(int argc, const char * argv[])
             strcat(swap_cmd, foo);
             cnt--;
         }
-
+        
         for (int i = 0; i < cnt; i++)
         {
             sprintf(foo, "\\x%x", 0);
@@ -206,19 +205,19 @@ int main(int argc, const char * argv[])
         }
         sprintf(tmp, "/g\' < %s > %s", dynFilePath_out_str, dynFilePath_tempStr);
         strcat(swap_cmd, tmp);
-
+        
         sprintf(tmp, "; mv %s %s", dynFilePath_tempStr, dynFilePath_out_str);
         strcat(swap_cmd, tmp);
         NSLog(@"swap_cmd3: ...%s...", swap_cmd);
         system(swap_cmd);
         
-
+        
         // Resign code
         char resign[1024];
-
+        
         sprintf(resign, "codesign -fs \"iPhone Developer\" %s", dynFilePath_out_str);
         NSLog(@"Resign: %s", resign);
-
+        
         system(resign);
         
         
@@ -267,15 +266,15 @@ int main(int argc, const char * argv[])
         //** TEST decrypt. open, decrypt, write back to file
         NSData *decrypted_plain_text = [SecureData decryptData:cipher_txt password:appkey error:&error];
         if (error) NSLog(@"decrypt error: %@", error);
-
+        
         NSString *decrypted_dyn_plaint_txt_name = [NSString stringWithFormat:@"%@/%@", currentpath, @"decrypt.dylib"];
         NSLog(@"RR %@", decrypted_dyn_plaint_txt_name);
         [FileOps writeDataToFile:decrypted_dyn_plaint_txt_name  dbuff:decrypted_plain_text];
         
-       // NSData *encoded_dbuf = [encodedString dataUsingEncoding:NSUTF8StringEncoding];
-       //[FileOps writeDataToFile:@"base64_encoded.txt":encoded_dbuf];
+        // NSData *encoded_dbuf = [encodedString dataUsingEncoding:NSUTF8StringEncoding];
+        //[FileOps writeDataToFile:@"base64_encoded.txt":encoded_dbuf];
         
-       //NSLog(@"%@", [@"/tmp/afolder/ff.txt" stringByDeletingLastPathComponent]);
+        //NSLog(@"%@", [@"/tmp/afolder/ff.txt" stringByDeletingLastPathComponent]);
         
     }
     

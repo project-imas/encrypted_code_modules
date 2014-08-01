@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		669F8B1B198BE7330090578F /* ECM Build Fail */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 669F8B1F198BE7330090578F /* Build configuration list for PBXAggregateTarget "ECM Build Fail" */;
+			buildPhases = (
+				669F8B1E198BE7330090578F /* ECM BUNDLE .dylib files */,
+			);
+			dependencies = (
+				669F8B1C198BE7330090578F /* PBXTargetDependency */,
+			);
+			name = "ECM Build Fail";
+			productName = "ECM Build";
+		};
 		FE2D8F2318ECE6AA002E1212 /* ECM Build */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = FE2D8F2718ECE6AA002E1212 /* Build configuration list for PBXAggregateTarget "ECM Build" */;
@@ -22,6 +34,40 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		669F8AF9198BE72D0090578F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA600D1988268E00ADE7CE /* main.m */; };
+		669F8AFA198BE72D0090578F /* APViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B64E4B198BDA18006F250F /* APViewController.m */; };
+		669F8AFB198BE72D0090578F /* SecureData.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA60001988268E00ADE7CE /* SecureData.m */; };
+		669F8AFC198BE72D0090578F /* AppIntegrity.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA5FFD1988268E00ADE7CE /* AppIntegrity.m */; };
+		669F8AFE198BE72D0090578F /* IMSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA60041988268E00ADE7CE /* IMSAppDelegate.m */; };
+		669F8B00198BE72D0090578F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0AB9C518E4ACFB0092419F /* Security.framework */; };
+		669F8B01198BE72D0090578F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6618D2031E0042D40B /* CoreGraphics.framework */; };
+		669F8B02198BE72D0090578F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6818D2031E0042D40B /* UIKit.framework */; };
+		669F8B03198BE72D0090578F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6418D2031E0042D40B /* Foundation.framework */; };
+		669F8B04198BE72D0090578F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C3796640864AC1B5B66412 /* libPods.a */; };
+		669F8B07198BE72D0090578F /* APComplexPass_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B64E50198BDBA1006F250F /* APComplexPass_iPad.storyboard */; };
+		669F8B08198BE72D0090578F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECA60011988268E00ADE7CE /* Main.storyboard */; };
+		669F8B09198BE72D0090578F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECA600A1988268E00ADE7CE /* Images.xcassets */; };
+		669F8B0A198BE72D0090578F /* APSimplePass_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B64E55198BDBA1006F250F /* APSimplePass_iPhone.storyboard */; };
+		669F8B0B198BE72D0090578F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FECA60081988268E00ADE7CE /* InfoPlist.strings */; };
+		669F8B0C198BE72D0090578F /* imas_ecm_dynamiclib_builder in Resources */ = {isa = PBXBuildFile; fileRef = FECA600F1988268E00ADE7CE /* imas_ecm_dynamiclib_builder */; };
+		669F8B0D198BE72D0090578F /* imas_ecm_demo_app-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FECA600B1988268E00ADE7CE /* imas_ecm_demo_app-Info.plist */; };
+		669F8B0E198BE72D0090578F /* APQuestionPass_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B64E53198BDBA1006F250F /* APQuestionPass_iPhone.storyboard */; };
+		669F8B0F198BE72D0090578F /* APComplexPass_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B64E51198BDBA1006F250F /* APComplexPass_iPhone.storyboard */; };
+		669F8B10198BE72D0090578F /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = FE253C7E1988535F009F5FF8 /* Icon-72.png */; };
+		669F8B11198BE72D0090578F /* felf.sld in Resources */ = {isa = PBXBuildFile; fileRef = FEA6026919882E6B000F274E /* felf.sld */; };
+		669F8B12198BE72D0090578F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBC99A8195B741B0062417B /* Images.xcassets */; };
+		669F8B13198BE72D0090578F /* APSimplePass_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B64E54198BDBA1006F250F /* APSimplePass_iPad.storyboard */; };
+		669F8B14198BE72D0090578F /* APQuestionPass_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B64E52198BDBA1006F250F /* APQuestionPass_iPad.storyboard */; };
+		669F8B23198BE8860090578F /* imas_ecm_dynamiclib_builder_fail in Resources */ = {isa = PBXBuildFile; fileRef = 669F8B22198BE8860090578F /* imas_ecm_dynamiclib_builder_fail */; };
+		669F8B24198BF5570090578F /* IMSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA60061988268E00ADE7CE /* IMSViewController.m */; };
+		66B64E4C198BDA18006F250F /* APViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B64E4B198BDA18006F250F /* APViewController.m */; };
+		66B64E56198BDBA1006F250F /* APComplexPass_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B64E50198BDBA1006F250F /* APComplexPass_iPad.storyboard */; };
+		66B64E57198BDBA1006F250F /* APComplexPass_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B64E51198BDBA1006F250F /* APComplexPass_iPhone.storyboard */; };
+		66B64E58198BDBA1006F250F /* APQuestionPass_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B64E52198BDBA1006F250F /* APQuestionPass_iPad.storyboard */; };
+		66B64E59198BDBA1006F250F /* APQuestionPass_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B64E53198BDBA1006F250F /* APQuestionPass_iPhone.storyboard */; };
+		66B64E5A198BDBA1006F250F /* APSimplePass_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B64E54198BDBA1006F250F /* APSimplePass_iPad.storyboard */; };
+		66B64E5B198BDBA1006F250F /* APSimplePass_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B64E55198BDBA1006F250F /* APSimplePass_iPhone.storyboard */; };
+		C9B8A46E735E41FCB67BB86E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C3796640864AC1B5B66412 /* libPods.a */; };
 		FE0AB9C618E4ACFB0092419F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0AB9C518E4ACFB0092419F /* Security.framework */; };
 		FE253C7F1988535F009F5FF8 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = FE253C7E1988535F009F5FF8 /* Icon-72.png */; };
 		FE40DE6518D2031E0042D40B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6418D2031E0042D40B /* Foundation.framework */; };
@@ -31,7 +77,6 @@
 		FE40DE8518D2031E0042D40B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6418D2031E0042D40B /* Foundation.framework */; };
 		FE40DE8618D2031E0042D40B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40DE6818D2031E0042D40B /* UIKit.framework */; };
 		FEA6026A19882E6B000F274E /* felf.sld in Resources */ = {isa = PBXBuildFile; fileRef = FEA6026919882E6B000F274E /* felf.sld */; };
-		FEB14A8819882BCB002DBF73 /* libSecureFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB14A8519882AA1002DBF73 /* libSecureFoundation.a */; };
 		FEBC99A9195B741B0062417B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBC99A8195B741B0062417B /* Images.xcassets */; };
 		FECA60101988268E00ADE7CE /* AppIntegrity.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA5FFD1988268E00ADE7CE /* AppIntegrity.m */; };
 		FECA60111988268E00ADE7CE /* SecureData.m in Sources */ = {isa = PBXBuildFile; fileRef = FECA60001988268E00ADE7CE /* SecureData.m */; };
@@ -46,19 +91,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FEB14A8419882AA1002DBF73 /* PBXContainerItemProxy */ = {
+		669F8B1D198BE7330090578F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FEB14A8019882AA1002DBF73 /* SecureFoundation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3B89357C162C92F1003750B6;
-			remoteInfo = SecureFoundation;
-		};
-		FEB14A8619882B99002DBF73 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEB14A8019882AA1002DBF73 /* SecureFoundation.xcodeproj */;
+			containerPortal = FE40DE5918D2031E0042D40B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3B89357B162C92F1003750B6;
-			remoteInfo = SecureFoundation;
+			remoteGlobalIDString = FE40DE6018D2031E0042D40B;
+			remoteInfo = imas_ecm_demo_app;
 		};
 		FEFBA3F718ECE7C40065C59D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -70,6 +108,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6526814EDD684C50B271C435 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		669F8B19198BE72D0090578F /* imas_ecm_demo_app_fail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imas_ecm_demo_app_fail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		669F8B1A198BE72D0090578F /* imas_ecm_demo_app copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "imas_ecm_demo_app copy-Info.plist"; path = "/Users/rhannah/Work/encrypted_code_modules/ecm_demo_app/imas_ecm_demo_app copy-Info.plist"; sourceTree = "<absolute>"; };
+		669F8B22198BE8860090578F /* imas_ecm_dynamiclib_builder_fail */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = imas_ecm_dynamiclib_builder_fail; sourceTree = "<group>"; };
+		66B64E4A198BDA18006F250F /* APViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APViewController.h; path = app_integrity/APViewController.h; sourceTree = "<group>"; };
+		66B64E4B198BDA18006F250F /* APViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APViewController.m; path = app_integrity/APViewController.m; sourceTree = "<group>"; };
+		66B64E50198BDBA1006F250F /* APComplexPass_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = APComplexPass_iPad.storyboard; sourceTree = "<group>"; };
+		66B64E51198BDBA1006F250F /* APComplexPass_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = APComplexPass_iPhone.storyboard; sourceTree = "<group>"; };
+		66B64E52198BDBA1006F250F /* APQuestionPass_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = APQuestionPass_iPad.storyboard; sourceTree = "<group>"; };
+		66B64E53198BDBA1006F250F /* APQuestionPass_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = APQuestionPass_iPhone.storyboard; sourceTree = "<group>"; };
+		66B64E54198BDBA1006F250F /* APSimplePass_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = APSimplePass_iPad.storyboard; sourceTree = "<group>"; };
+		66B64E55198BDBA1006F250F /* APSimplePass_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = APSimplePass_iPhone.storyboard; sourceTree = "<group>"; };
+		89C3796640864AC1B5B66412 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0AB9C518E4ACFB0092419F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FE253C7E1988535F009F5FF8 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Images.xcassets/AppIcon.appiconset/Icon-72.png"; sourceTree = "<group>"; };
 		FE40DE6118D2031E0042D40B /* imas_ecm_demo_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imas_ecm_demo_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +130,6 @@
 		FE40DE8218D2031E0042D40B /* imas_ecm_demo_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imas_ecm_demo_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE40DE8318D2031E0042D40B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FEA6026919882E6B000F274E /* felf.sld */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = felf.sld; sourceTree = "<group>"; };
-		FEB14A8019882AA1002DBF73 /* SecureFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SecureFoundation.xcodeproj; path = ../vendor/securefoundation/SecureFoundation.xcodeproj; sourceTree = "<group>"; };
 		FEBC99A8195B741B0062417B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FECA5FFC1988268E00ADE7CE /* AppIntegrity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppIntegrity.h; sourceTree = "<group>"; };
 		FECA5FFD1988268E00ADE7CE /* AppIntegrity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppIntegrity.m; sourceTree = "<group>"; };
@@ -99,15 +149,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		669F8AFF198BE72D0090578F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669F8B00198BE72D0090578F /* Security.framework in Frameworks */,
+				669F8B01198BE72D0090578F /* CoreGraphics.framework in Frameworks */,
+				669F8B02198BE72D0090578F /* UIKit.framework in Frameworks */,
+				669F8B03198BE72D0090578F /* Foundation.framework in Frameworks */,
+				669F8B04198BE72D0090578F /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE40DE5E18D2031E0042D40B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEB14A8819882BCB002DBF73 /* libSecureFoundation.a in Frameworks */,
 				FE0AB9C618E4ACFB0092419F /* Security.framework in Frameworks */,
 				FE40DE6718D2031E0042D40B /* CoreGraphics.framework in Frameworks */,
 				FE40DE6918D2031E0042D40B /* UIKit.framework in Frameworks */,
 				FE40DE6518D2031E0042D40B /* Foundation.framework in Frameworks */,
+				C9B8A46E735E41FCB67BB86E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,11 +190,12 @@
 			isa = PBXGroup;
 			children = (
 				FE253C7E1988535F009F5FF8 /* Icon-72.png */,
-				FEB14A8019882AA1002DBF73 /* SecureFoundation.xcodeproj */,
 				FECA5FFA1988268E00ADE7CE /* ecm_demo_app */,
 				FEBC99A8195B741B0062417B /* Images.xcassets */,
 				FE40DE6318D2031E0042D40B /* Frameworks */,
 				FE40DE6218D2031E0042D40B /* Products */,
+				6526814EDD684C50B271C435 /* Pods.xcconfig */,
+				669F8B1A198BE72D0090578F /* imas_ecm_demo_app copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +204,7 @@
 			children = (
 				FE40DE6118D2031E0042D40B /* imas_ecm_demo_app.app */,
 				FE40DE8218D2031E0042D40B /* imas_ecm_demo_appTests.xctest */,
+				669F8B19198BE72D0090578F /* imas_ecm_demo_app_fail.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,16 +217,9 @@
 				FE40DE6618D2031E0042D40B /* CoreGraphics.framework */,
 				FE40DE6818D2031E0042D40B /* UIKit.framework */,
 				FE40DE8318D2031E0042D40B /* XCTest.framework */,
+				89C3796640864AC1B5B66412 /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FEB14A8119882AA1002DBF73 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FEB14A8519882AA1002DBF73 /* libSecureFoundation.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FECA5FFA1988268E00ADE7CE /* ecm_demo_app */ = {
@@ -170,10 +227,18 @@
 			children = (
 				FECA5FFB1988268E00ADE7CE /* app_integrity */,
 				FECA60011988268E00ADE7CE /* Main.storyboard */,
+				66B64E50198BDBA1006F250F /* APComplexPass_iPad.storyboard */,
+				66B64E51198BDBA1006F250F /* APComplexPass_iPhone.storyboard */,
+				66B64E52198BDBA1006F250F /* APQuestionPass_iPad.storyboard */,
+				66B64E53198BDBA1006F250F /* APQuestionPass_iPhone.storyboard */,
+				66B64E54198BDBA1006F250F /* APSimplePass_iPad.storyboard */,
+				66B64E55198BDBA1006F250F /* APSimplePass_iPhone.storyboard */,
 				FECA60031988268E00ADE7CE /* IMSAppDelegate.h */,
 				FECA60041988268E00ADE7CE /* IMSAppDelegate.m */,
 				FECA60051988268E00ADE7CE /* IMSViewController.h */,
 				FECA60061988268E00ADE7CE /* IMSViewController.m */,
+				66B64E4A198BDA18006F250F /* APViewController.h */,
+				66B64E4B198BDA18006F250F /* APViewController.m */,
 				FECA60071988268E00ADE7CE /* support */,
 				FECA600E1988268E00ADE7CE /* tools */,
 			);
@@ -215,6 +280,7 @@
 		FECA600E1988268E00ADE7CE /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				669F8B22198BE8860090578F /* imas_ecm_dynamiclib_builder_fail */,
 				FECA600F1988268E00ADE7CE /* imas_ecm_dynamiclib_builder */,
 			);
 			path = tools;
@@ -223,19 +289,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FE40DE6018D2031E0042D40B /* imas_ecm_demo_app */ = {
+		669F8AF6198BE72D0090578F /* imas_ecm_demo_app_fail */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE40DE9318D2031E0042D40B /* Build configuration list for PBXNativeTarget "imas_ecm_demo_app" */;
+			buildConfigurationList = 669F8B16198BE72D0090578F /* Build configuration list for PBXNativeTarget "imas_ecm_demo_app_fail" */;
 			buildPhases = (
-				FE40DE5D18D2031E0042D40B /* Sources */,
-				FE40DE5E18D2031E0042D40B /* Frameworks */,
-				FE253C7C19883C73009F5FF8 /* TOUCH FELF file for bundle COPY */,
-				FE40DE5F18D2031E0042D40B /* Resources */,
+				669F8AF7198BE72D0090578F /* Check Pods Manifest.lock */,
+				669F8AF8198BE72D0090578F /* Sources */,
+				669F8AFF198BE72D0090578F /* Frameworks */,
+				669F8B05198BE72D0090578F /* TOUCH FELF file for bundle COPY */,
+				669F8B06198BE72D0090578F /* Resources */,
+				669F8B15198BE72D0090578F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FEB14A8719882B99002DBF73 /* PBXTargetDependency */,
+			);
+			name = imas_ecm_demo_app_fail;
+			productName = imas_ecm_demo_app;
+			productReference = 669F8B19198BE72D0090578F /* imas_ecm_demo_app_fail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE40DE6018D2031E0042D40B /* imas_ecm_demo_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE40DE9318D2031E0042D40B /* Build configuration list for PBXNativeTarget "imas_ecm_demo_app" */;
+			buildPhases = (
+				78A4A7B423F342D49AE157D2 /* Check Pods Manifest.lock */,
+				FE40DE5D18D2031E0042D40B /* Sources */,
+				FE40DE5E18D2031E0042D40B /* Frameworks */,
+				FE253C7C19883C73009F5FF8 /* TOUCH FELF file for bundle COPY */,
+				FE40DE5F18D2031E0042D40B /* Resources */,
+				24C38997B6164AB3AC17C615 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
 			);
 			name = imas_ecm_demo_app;
 			productName = imas_ecm_demo_app;
@@ -288,44 +375,58 @@
 			mainGroup = FE40DE5818D2031E0042D40B;
 			productRefGroup = FE40DE6218D2031E0042D40B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FEB14A8119882AA1002DBF73 /* Products */;
-					ProjectRef = FEB14A8019882AA1002DBF73 /* SecureFoundation.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FE40DE6018D2031E0042D40B /* imas_ecm_demo_app */,
 				FE40DE8118D2031E0042D40B /* imas_ecm_demo_appTests */,
 				FE2D8F2318ECE6AA002E1212 /* ECM Build */,
+				669F8AF6198BE72D0090578F /* imas_ecm_demo_app_fail */,
+				669F8B1B198BE7330090578F /* ECM Build Fail */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		FEB14A8519882AA1002DBF73 /* libSecureFoundation.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSecureFoundation.a;
-			remoteRef = FEB14A8419882AA1002DBF73 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
+		669F8B06198BE72D0090578F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669F8B07198BE72D0090578F /* APComplexPass_iPad.storyboard in Resources */,
+				669F8B08198BE72D0090578F /* Main.storyboard in Resources */,
+				669F8B09198BE72D0090578F /* Images.xcassets in Resources */,
+				669F8B0A198BE72D0090578F /* APSimplePass_iPhone.storyboard in Resources */,
+				669F8B0B198BE72D0090578F /* InfoPlist.strings in Resources */,
+				669F8B0C198BE72D0090578F /* imas_ecm_dynamiclib_builder in Resources */,
+				669F8B0D198BE72D0090578F /* imas_ecm_demo_app-Info.plist in Resources */,
+				669F8B0E198BE72D0090578F /* APQuestionPass_iPhone.storyboard in Resources */,
+				669F8B0F198BE72D0090578F /* APComplexPass_iPhone.storyboard in Resources */,
+				669F8B10198BE72D0090578F /* Icon-72.png in Resources */,
+				669F8B11198BE72D0090578F /* felf.sld in Resources */,
+				669F8B12198BE72D0090578F /* Images.xcassets in Resources */,
+				669F8B13198BE72D0090578F /* APSimplePass_iPad.storyboard in Resources */,
+				669F8B14198BE72D0090578F /* APQuestionPass_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE40DE5F18D2031E0042D40B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66B64E56198BDBA1006F250F /* APComplexPass_iPad.storyboard in Resources */,
 				FECA60121988268E00ADE7CE /* Main.storyboard in Resources */,
 				FECA60161988268E00ADE7CE /* Images.xcassets in Resources */,
+				66B64E5B198BDBA1006F250F /* APSimplePass_iPhone.storyboard in Resources */,
 				FECA60151988268E00ADE7CE /* InfoPlist.strings in Resources */,
 				FECA60191988268E00ADE7CE /* imas_ecm_dynamiclib_builder in Resources */,
 				FECA60171988268E00ADE7CE /* imas_ecm_demo_app-Info.plist in Resources */,
+				66B64E59198BDBA1006F250F /* APQuestionPass_iPhone.storyboard in Resources */,
+				66B64E57198BDBA1006F250F /* APComplexPass_iPhone.storyboard in Resources */,
 				FE253C7F1988535F009F5FF8 /* Icon-72.png in Resources */,
 				FEA6026A19882E6B000F274E /* felf.sld in Resources */,
 				FEBC99A9195B741B0062417B /* Images.xcassets in Resources */,
+				66B64E5A198BDBA1006F250F /* APSimplePass_iPad.storyboard in Resources */,
+				66B64E58198BDBA1006F250F /* APQuestionPass_iPad.storyboard in Resources */,
+				669F8B23198BE8860090578F /* imas_ecm_dynamiclib_builder_fail in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +440,94 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		24C38997B6164AB3AC17C615 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		669F8AF7198BE72D0090578F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		669F8B05198BE72D0090578F /* TOUCH FELF file for bundle COPY */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "TOUCH FELF file for bundle COPY";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "########\n## Variables\nAPP_DIR_NAME=\"ecm_demo_app\"\nSECURE_LIB_PATH=\"app_integrity/libs\"\nSECURE_LIB=\"felf.sld\"\n\ntouch $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB";
+		};
+		669F8B15198BE72D0090578F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		669F8B1E198BE7330090578F /* ECM BUNDLE .dylib files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "ECM BUNDLE .dylib files";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "########\n## Variables\nAPP_DIR_NAME=\"ecm_demo_app\"\nPROD_NAME=\"imas_ecm_demo_app_fail\"\nCSFP=$CODESIGNING_FOLDER_PATH/${PROD_NAME}.app\nSECURE_LIB_PATH=\"app_integrity/libs\"\nSECURE_LIB=\"felf.sld\"\n## app to be encrypted\nSENSITIVE_LIB=$SECURE_LIB_PATH/\"ecm_app_integrity_check.dylib\"\n## encryption key\nLIB_KEY=\"IMAS1234\"\n\n#######\n## Debug output\necho \"ECM builder - patch in SIZE and FILE HASH\"\necho \"src:\" $SRCROOT\necho \"build_dir:\" $BUILD_DIR\necho \"config build_dir: \" $CONFIGURATION_BUILD_DIR\necho \"PROD NAME and dir:\" $PROD_NAME\necho \"codesign path:\" $CSFP\n\n#######\n## Secure the library\n$SRCROOT/$APP_DIR_NAME/tools/imas_ecm_dynamiclib_builder_fail -f $CSFP/$PROD_NAME -d $SRCROOT/$APP_DIR_NAME/$SENSITIVE_LIB -k $LIB_KEY\n\n\n#######\n## copy into bundle\necho \"copy SECURE_LIB from:\" $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB\necho \"to: \" $CSFP/$SECURE_LIB\ncp $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB  $CSFP\n## copy patched clear text .dylib to this for testing without encryption\n##cp $SRCROOT/ecm_demo_app/imas_app_check.dylib.out $CSFP/imas_app_check.dylib\n";
+		};
+		78A4A7B423F342D49AE157D2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		FE253C7C19883C73009F5FF8 /* TOUCH FELF file for bundle COPY */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,16 +554,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "########\n## Variables\nAPP_DIR_NAME=\"ecm_demo_app\"\nPROD_NAME=\"imas_ecm_demo_app\"\nCSFP=$CODESIGNING_FOLDER_PATH/${PROD_NAME}.app\nSECURE_LIB_PATH=\"app_integrity/libs\"\nSECURE_LIB=\"felf.sld\"\n## app to be encrypted\nSENSITIVE_LIB=$SECURE_LIB_PATH/\"ecm_app_integrity_check.dylib\"\n## encryption key\nLIB_KEY=\"THISISMYKEY\"\n\n#######\n## Debug output\necho \"ECM builder - patch in SIZE and FILE HASH\"\necho \"src:\" $SRCROOT\necho \"build_dir:\" $BUILD_DIR\necho \"config build_dir: \" $CONFIGURATION_BUILD_DIR\necho \"PROD NAME and dir:\" $PROD_NAME\necho \"codesign path:\" $CSFP\n\n#######\n## Secure the library\n$SRCROOT/$APP_DIR_NAME/tools/imas_ecm_dynamiclib_builder -f $CSFP/$PROD_NAME -d $SRCROOT/$APP_DIR_NAME/$SENSITIVE_LIB -k $LIB_KEY\n\n\n#######\n## copy into bundle\necho \"copy SECURE_LIB from:\" $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB\necho \"to: \" $CSFP/$SECURE_LIB\ncp $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB  $CSFP\n## copy patched clear text .dylib to this for testing without encryption\n##cp $SRCROOT/ecm_demo_app/imas_app_check.dylib.out $CSFP/imas_app_check.dylib\n";
+			shellScript = "########\n## Variables\nAPP_DIR_NAME=\"ecm_demo_app\"\nPROD_NAME=\"imas_ecm_demo_app\"\nCSFP=$CODESIGNING_FOLDER_PATH/${PROD_NAME}.app\nSECURE_LIB_PATH=\"app_integrity/libs\"\nSECURE_LIB=\"felf.sld\"\n## app to be encrypted\nSENSITIVE_LIB=$SECURE_LIB_PATH/\"ecm_app_integrity_check.dylib\"\n## encryption key\nLIB_KEY=\"IMAS1234\"\n\n#######\n## Debug output\necho \"ECM builder - patch in SIZE and FILE HASH\"\necho \"src:\" $SRCROOT\necho \"build_dir:\" $BUILD_DIR\necho \"config build_dir: \" $CONFIGURATION_BUILD_DIR\necho \"PROD NAME and dir:\" $PROD_NAME\necho \"codesign path:\" $CSFP\n\n#######\n## Secure the library\n$SRCROOT/$APP_DIR_NAME/tools/imas_ecm_dynamiclib_builder -f $CSFP/$PROD_NAME -d $SRCROOT/$APP_DIR_NAME/$SENSITIVE_LIB -k $LIB_KEY\n\n\n#######\n## copy into bundle\necho \"copy SECURE_LIB from:\" $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB\necho \"to: \" $CSFP/$SECURE_LIB\ncp $SRCROOT/$APP_DIR_NAME/$SECURE_LIB_PATH/$SECURE_LIB  $CSFP\n## copy patched clear text .dylib to this for testing without encryption\n##cp $SRCROOT/ecm_demo_app/imas_app_check.dylib.out $CSFP/imas_app_check.dylib\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		669F8AF8198BE72D0090578F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669F8B24198BF5570090578F /* IMSViewController.m in Sources */,
+				669F8AF9198BE72D0090578F /* main.m in Sources */,
+				669F8AFA198BE72D0090578F /* APViewController.m in Sources */,
+				669F8AFB198BE72D0090578F /* SecureData.m in Sources */,
+				669F8AFC198BE72D0090578F /* AppIntegrity.m in Sources */,
+				669F8AFE198BE72D0090578F /* IMSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE40DE5D18D2031E0042D40B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FECA60181988268E00ADE7CE /* main.m in Sources */,
+				66B64E4C198BDA18006F250F /* APViewController.m in Sources */,
 				FECA60111988268E00ADE7CE /* SecureData.m in Sources */,
 				FECA60101988268E00ADE7CE /* AppIntegrity.m in Sources */,
 				FECA60141988268E00ADE7CE /* IMSViewController.m in Sources */,
@@ -392,10 +595,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FEB14A8719882B99002DBF73 /* PBXTargetDependency */ = {
+		669F8B1C198BE7330090578F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SecureFoundation;
-			targetProxy = FEB14A8619882B99002DBF73 /* PBXContainerItemProxy */;
+			target = FE40DE6018D2031E0042D40B /* imas_ecm_demo_app */;
+			targetProxy = 669F8B1D198BE7330090578F /* PBXContainerItemProxy */;
 		};
 		FEFBA3F818ECE7C40065C59D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -424,6 +627,84 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		669F8B17198BE72D0090578F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6526814EDD684C50B271C435 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jase Hannah (VDB867F4H6)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ecm_demo_app/support/imas_ecm_demo_app-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FAIL=1",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = "imas_ecm_demo_app copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/ecm_demo_app",
+					"$(SRCROOT)/../../vendor",
+					"$(PROJECT_DIR)/ecm_demo_app",
+				);
+				PRODUCT_NAME = imas_ecm_demo_app_fail;
+				PROVISIONING_PROFILE = "5EF083A2-75FF-467B-8A18-3CAE66073561";
+				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/../vendor/securefoundation/SecureFoundation;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		669F8B18198BE72D0090578F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6526814EDD684C50B271C435 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jase Hannah (VDB867F4H6)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ecm_demo_app/support/imas_ecm_demo_app-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"FAIL=1",
+				);
+				INFOPLIST_FILE = "imas_ecm_demo_app copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/ecm_demo_app",
+					"$(SRCROOT)/../../vendor",
+					"$(PROJECT_DIR)/ecm_demo_app",
+				);
+				PRODUCT_NAME = imas_ecm_demo_app_fail;
+				PROVISIONING_PROFILE = "5EF083A2-75FF-467B-8A18-3CAE66073561";
+				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/../vendor/securefoundation/SecureFoundation;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		669F8B20198BE7330090578F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jase Hannah (VDB867F4H6)";
+				PRODUCT_NAME = "ECM Build Fail";
+				PROVISIONING_PROFILE = "5EF083A2-75FF-467B-8A18-3CAE66073561";
+			};
+			name = Debug;
+		};
+		669F8B21198BE7330090578F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jase Hannah (VDB867F4H6)";
+				PRODUCT_NAME = "ECM Build Fail";
+				PROVISIONING_PROFILE = "5EF083A2-75FF-467B-8A18-3CAE66073561";
+			};
+			name = Release;
+		};
 		FE2D8F2418ECE6AA002E1212 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -518,6 +799,7 @@
 		};
 		FE40DE9418D2031E0042D40B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6526814EDD684C50B271C435 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -525,6 +807,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jase Hannah (VDB867F4H6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ecm_demo_app/support/imas_ecm_demo_app-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = "ecm_demo_app/support/imas_ecm_demo_app-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
@@ -542,6 +828,7 @@
 		};
 		FE40DE9518D2031E0042D40B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6526814EDD684C50B271C435 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -549,6 +836,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jase Hannah (VDB867F4H6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ecm_demo_app/support/imas_ecm_demo_app-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = "ecm_demo_app/support/imas_ecm_demo_app-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
@@ -614,6 +905,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		669F8B16198BE72D0090578F /* Build configuration list for PBXNativeTarget "imas_ecm_demo_app_fail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				669F8B17198BE72D0090578F /* Debug */,
+				669F8B18198BE72D0090578F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		669F8B1F198BE7330090578F /* Build configuration list for PBXAggregateTarget "ECM Build Fail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				669F8B20198BE7330090578F /* Debug */,
+				669F8B21198BE7330090578F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FE2D8F2718ECE6AA002E1212 /* Build configuration list for PBXAggregateTarget "ECM Build" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

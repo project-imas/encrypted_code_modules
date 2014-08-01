@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		669F8AEC198BE6110090578F /* SecureData.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6BF36018D79B4D00AC3774 /* SecureData.m */; };
+		669F8AEF198BE6110090578F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6BF36A18D79D2D00AC3774 /* Security.framework */; };
+		669F8AF1198BE6110090578F /* imas_ecm_dynamiclib_builder.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FEA1AD3F18CF9DBD00B9E609 /* imas_ecm_dynamiclib_builder.1 */; };
+		669F8B25198C01290090578F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B64E6E198BE550006F250F /* main.m */; };
 		FE6BF36118D79B4D00AC3774 /* SecureData.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6BF36018D79B4D00AC3774 /* SecureData.m */; };
 		FE6BF36B18D79D2D00AC3774 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6BF36A18D79D2D00AC3774 /* Security.framework */; };
 		FEA1AD4018CF9DBD00B9E609 /* imas_ecm_dynamiclib_builder.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FEA1AD3F18CF9DBD00B9E609 /* imas_ecm_dynamiclib_builder.1 */; };
@@ -14,6 +18,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		669F8AF0198BE6110090578F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				669F8AF1198BE6110090578F /* imas_ecm_dynamiclib_builder.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		FEA1AD3818CF9DBD00B9E609 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -27,6 +41,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		669F8AF5198BE6110090578F /* imas_ecm_dynamiclib_builder_fail */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = imas_ecm_dynamiclib_builder_fail; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B64E6E198BE550006F250F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66B64E70198BE550006F250F /* imas_ecm_dynamiclib_builder_fail.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = imas_ecm_dynamiclib_builder_fail.1; sourceTree = "<group>"; };
 		FE6BF35F18D79B4D00AC3774 /* SecureData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureData.h; sourceTree = "<group>"; };
 		FE6BF36018D79B4D00AC3774 /* SecureData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureData.m; sourceTree = "<group>"; };
 		FE6BF36A18D79D2D00AC3774 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -36,6 +53,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		669F8AEE198BE6110090578F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669F8AEF198BE6110090578F /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEA1AD3718CF9DBD00B9E609 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66B64E6D198BE550006F250F /* imas_ecm_dynamiclib_builder_fail */ = {
+			isa = PBXGroup;
+			children = (
+				66B64E6E198BE550006F250F /* main.m */,
+				66B64E70198BE550006F250F /* imas_ecm_dynamiclib_builder_fail.1 */,
+			);
+			path = imas_ecm_dynamiclib_builder_fail;
+			sourceTree = "<group>";
+		};
 		FE6BF36518D79C4000AC3774 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +92,7 @@
 		FEA1AD3118CF9DBD00B9E609 = {
 			isa = PBXGroup;
 			children = (
+				66B64E6D198BE550006F250F /* imas_ecm_dynamiclib_builder_fail */,
 				FE6BF36518D79C4000AC3774 /* Frameworks */,
 				FEA1AD3C18CF9DBD00B9E609 /* imas_ecm_dynamiclib_builder */,
 				FEA1AD3B18CF9DBD00B9E609 /* Products */,
@@ -68,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				FEA1AD3A18CF9DBD00B9E609 /* imas_ecm_dynamiclib_builder */,
+				669F8AF5198BE6110090578F /* imas_ecm_dynamiclib_builder_fail */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +122,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		669F8AEA198BE6110090578F /* imas_ecm_dynamiclib_builder_fail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 669F8AF2198BE6110090578F /* Build configuration list for PBXNativeTarget "imas_ecm_dynamiclib_builder_fail" */;
+			buildPhases = (
+				669F8AEB198BE6110090578F /* Sources */,
+				669F8AEE198BE6110090578F /* Frameworks */,
+				669F8AF0198BE6110090578F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imas_ecm_dynamiclib_builder_fail;
+			productName = imas_ecm_dynamiclib_builder;
+			productReference = 669F8AF5198BE6110090578F /* imas_ecm_dynamiclib_builder_fail */;
+			productType = "com.apple.product-type.tool";
+		};
 		FEA1AD3918CF9DBD00B9E609 /* imas_ecm_dynamiclib_builder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEA1AD4318CF9DBD00B9E609 /* Build configuration list for PBXNativeTarget "imas_ecm_dynamiclib_builder" */;
@@ -125,11 +178,21 @@
 			projectRoot = "";
 			targets = (
 				FEA1AD3918CF9DBD00B9E609 /* imas_ecm_dynamiclib_builder */,
+				669F8AEA198BE6110090578F /* imas_ecm_dynamiclib_builder_fail */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		669F8AEB198BE6110090578F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669F8AEC198BE6110090578F /* SecureData.m in Sources */,
+				669F8B25198C01290090578F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEA1AD3618CF9DBD00B9E609 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +205,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		669F8AF3198BE6110090578F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_NAME = imas_ecm_dynamiclib_builder_fail;
+			};
+			name = Debug;
+		};
+		669F8AF4198BE6110090578F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_NAME = imas_ecm_dynamiclib_builder_fail;
+			};
+			name = Release;
+		};
 		FEA1AD4118CF9DBD00B9E609 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -235,6 +320,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		669F8AF2198BE6110090578F /* Build configuration list for PBXNativeTarget "imas_ecm_dynamiclib_builder_fail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				669F8AF3198BE6110090578F /* Debug */,
+				669F8AF4198BE6110090578F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FEA1AD3518CF9DBD00B9E609 /* Build configuration list for PBXProject "imas_ecm_dynamiclib_builder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

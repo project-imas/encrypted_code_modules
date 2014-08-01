@@ -65,12 +65,13 @@
 //** read .sld file and decrypt, write file back out
 + (int) do_app_integrity: (NSString *)pass {
   
+    int ret = 0;
     //** read *this* APPS executable file
     NSFileHandle      *inFile;
     NSFileManager     *fileMgr;
     NSString          *filePath;
     NSError           *error;
-    NSArray *directoryContent;
+//    NSArray *directoryContent;
     
     
     //** debug file listing
@@ -93,7 +94,7 @@
     
     if ( [fileMgr fileExistsAtPath:filePath] == NO ) {
         NSLog(@"File does not exist!");
-        return -1;
+        ret = -1;
     }
     inFile = [NSFileHandle fileHandleForReadingAtPath: filePath];
     
@@ -105,7 +106,7 @@
     NSData *decrypted_plain_text = [SecureData decryptData:cipher_txt password:pass error:&error];
     if (error) {
         NSLog(@"decrypt error: %@", error);
-        return -1;
+        ret = -1;
     }
     
     ///    /var/mobile/Applications/7C3BA57E-0C08-454B-B4D0-C078B7C3BE16/Documents/APP_INT_LIBNAME
@@ -134,18 +135,18 @@
                                        };
             NSLog(@"%@", userInfo);
         }
-        return -1;
+        ret = -1;
     }
     
     [outFile closeFile];
     if ( [fileMgr fileExistsAtPath:decrypted_dyn_plain_txt_filePath] == NO ) {
         NSLog(@"File does not exist!");
-        return -1;
+        ret = -1;
     }
 
     /*
-     //** this is a technique to load a function that has bundled as part of the app itself.
-     //** may need this later.
+     ** this is a technique to load a function that has bundled as part of the app itself.
+     ** may need this later.
      void (*init)() = dlsym(RTLD_MAIN_ONLY, "doAppIntegrity");
      if (init != NULL)  {
      init();
@@ -173,7 +174,7 @@
      NSLog(@"File %d: %@", (count + 1), [directoryContent objectAtIndex:count]);
      }
      
-     //** debug file listing
+     ** debug file listing
      NSLog(@"LISTING ALL FILES FOUND 3- %@", docPath);
      directoryContent = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:docPath error:NULL];
      for (int count = 0; count < (int)[directoryContent count]; count++) {
@@ -185,16 +186,17 @@
     //const char *dylibPath = [docPathFile cStringUsingEncoding:NSASCIIStringEncoding];
     
     //** read and open the dynamic library
-//    void *libHandle = dlVolatileOpen(docPathFile);
-    void * libHandle = dlopen([docPathFile UTF8String], RTLD_NOW);
+    void *libHandle = dlVolatileOpen(docPathFile);
+//    void * libHandle = dlopen([docPathFile UTF8String], RTLD_NOW);
+    
+//    NSDictionary *fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:docPathFile error:nil];
+//    NSNumber *fileSizeNumber = [fileAttributes objectForKey:NSFileSize];
     
     const char* msg = dlerror();
     if (msg) {
         NSLog(@"\n****\n%s\n****\n", msg);
-        return -1;
     }
     
-    int ret = 0;
     //** make a function call into the newly loaded library
     NSLog(@"calling into .dylib, performing intergrity check");
     if (libHandle != NULL) {
@@ -205,8 +207,10 @@
                 ret = -1;
         }
         NSLog(@"Shreding file on close!");
-//        dlVolatileClose(libHandle);
-        dlclose(libHandle);
+        dlVolatileClose(libHandle);
+//        dlclose(libHandle);
+
+//        shred(docPathFile, [fileSizeNumber intValue], 3, YES);
     }
     else {
         NSLog(@"libHandle is NULL - check path!!");

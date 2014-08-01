@@ -53,9 +53,15 @@ NSData *get_fileSize() {
     return fsize;
 }
 
-#define AppName @"imas_ecm_demo_app"
+#ifdef FAIL
+    NSString *AppName = @"imas_ecm_demo_app_fail";
+#else
+     NSString *AppName = @"imas_ecm_demo_app";
+#endif
 
 int doAppIntegrity() {
+    
+    int ret = 0;
     
     NSLog(@"  ******************************");
     NSLog(@"  Here in iMASAppIntegrity DYLIB");
@@ -77,28 +83,28 @@ int doAppIntegrity() {
     
     if ( [fileMgr fileExistsAtPath:filePath] == NO ) {
         NSLog(@"File does not exist!");
-        return -1;
+        ret = -1;
     }
     
     //** FILE SIZE
     inFile = [NSFileHandle fileHandleForReadingAtPath: filePath];
     NSData *plain_txt = [ inFile readDataToEndOfFile];
-    unsigned int app_file_size = [plain_txt length];
+    unsigned int app_file_size = (CC_LONG)[plain_txt length];
     NSLog(@"AS-IS - APP file size: %d", app_file_size);
     [inFile closeFile];
     
     //** SHA256bit HASH
     unsigned char hash[CC_SHA256_DIGEST_LENGTH];
-    CC_SHA256([plain_txt bytes], [plain_txt length], hash);
+    CC_SHA256([plain_txt bytes], (CC_LONG)[plain_txt length], hash);
     NSData *app_sig = [NSData dataWithBytes:hash length:CC_SHA1_DIGEST_LENGTH];
     //NSData *sha_hash_val = IMSHashData_SHA256(plain_txt);
     NSLog(@"AS-IS - sha_hash_val 20 bytes: %@", app_sig);
-    NSLog(@"app_sig_len:%d", [app_sig length]);
+    NSLog(@"app_sig_len:%lu", (unsigned long)[app_sig length]);
     
     
     NSData *trusted_app_sig = [NSData dataWithBytes:sha256_placeholder  length:CC_SHA1_DIGEST_LENGTH];
     NSLog(@"trusted app sig:%@", trusted_app_sig);
-    NSLog(@"trusted app sig len:%d", [trusted_app_sig length]);
+    NSLog(@"trusted app sig len:%lu", (unsigned long)[trusted_app_sig length]);
     
     NSData *trusted_app_size_data = [NSData dataWithBytes:file_size_placeholder  length:4];
     unsigned int trusted_app_size;
@@ -107,8 +113,6 @@ int doAppIntegrity() {
     NSLog(@"trusted app size hex:%@", trusted_app_size_data);
     NSLog(@"trusted app size:%d", trusted_app_size);
     
-    
-    int ret = 0;
     // compare computed sha hash to passed in value
     if (trusted_app_size != app_file_size) {
         NSLog(@"App Integrity FAIL - file size MISMATCH");

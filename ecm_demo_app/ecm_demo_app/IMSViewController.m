@@ -6,6 +6,12 @@
 //  Copyright (c) 2014 Gregg Ganley. All rights reserved.
 //
 
+#ifdef FAIL
+    const char* APP_NAME = "imas_ecm_demo_app_fail";
+#else
+    const char* APP_NAME = "imas_ecm_demo_app";
+#endif
+
 #import "IMSViewController.h"
 #import "AppIntegrity.h"
 #import "IMSKeychain.h"
@@ -65,6 +71,8 @@
 
     [self.view endEditing:YES];
     
+    // 0 on success
+    // -1 on error
     int success = [AppIntegrity do_app_integrity:unlockVal];
     
     // Only store value if it's not there and the dylib worked
@@ -81,7 +89,7 @@
     const char *key, *val;
     
     q = asl_new(ASL_TYPE_QUERY);
-    asl_set_query(q, ASL_KEY_SENDER, "imas_ecm_demo_app", ASL_QUERY_OP_EQUAL);
+    asl_set_query(q, ASL_KEY_SENDER, APP_NAME, ASL_QUERY_OP_EQUAL);
     
     aslresponse r = asl_search(NULL, q);
     while (NULL != (m = aslresponse_next(r)))

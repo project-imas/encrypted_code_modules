@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		669F8B28198C28A50090578F /* app_integrity_check.m in Sources */ = {isa = PBXBuildFile; fileRef = FE94C6D51988221600E5EF23 /* app_integrity_check.m */; };
+		669F8B2A198C28A50090578F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6BF35618D78E9A00AC3774 /* Security.framework */; };
+		669F8B2B198C28A50090578F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFF56BD16C05B15006F0DF0 /* Foundation.framework */; };
 		FE6BF35718D78E9A00AC3774 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6BF35618D78E9A00AC3774 /* Security.framework */; };
 		FE94C6D71988221600E5EF23 /* app_integrity_check.m in Sources */ = {isa = PBXBuildFile; fileRef = FE94C6D51988221600E5EF23 /* app_integrity_check.m */; };
 		FEFF56BE16C05B15006F0DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFF56BD16C05B15006F0DF0 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		669F8B2F198C28A50090578F /* ecm_app_integrity_check.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = ecm_app_integrity_check.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6BF35618D78E9A00AC3774 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FE94C6D41988221600E5EF23 /* app_integrity_check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app_integrity_check.h; sourceTree = "<group>"; };
 		FE94C6D51988221600E5EF23 /* app_integrity_check.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = app_integrity_check.m; sourceTree = "<group>"; };
@@ -22,6 +26,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		669F8B29198C28A50090578F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669F8B2A198C28A50090578F /* Security.framework in Frameworks */,
+				669F8B2B198C28A50090578F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEFF56B716C05B15006F0DF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				FEFF56BA16C05B15006F0DF0 /* ecm_app_integrity_check.dylib */,
+				669F8B2F198C28A50090578F /* ecm_app_integrity_check.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +87,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		669F8B26198C28A50090578F /* ecm_app_integrity_check_fail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 669F8B2C198C28A50090578F /* Build configuration list for PBXNativeTarget "ecm_app_integrity_check_fail" */;
+			buildPhases = (
+				669F8B27198C28A50090578F /* Sources */,
+				669F8B29198C28A50090578F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ecm_app_integrity_check_fail;
+			productName = ecm_app_integrity_check;
+			productReference = 669F8B2F198C28A50090578F /* ecm_app_integrity_check.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		FEFF56B916C05B15006F0DF0 /* ecm_app_integrity_check */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEFF56C816C05B15006F0DF0 /* Build configuration list for PBXNativeTarget "ecm_app_integrity_check" */;
@@ -116,11 +146,20 @@
 			projectRoot = "";
 			targets = (
 				FEFF56B916C05B15006F0DF0 /* ecm_app_integrity_check */,
+				669F8B26198C28A50090578F /* ecm_app_integrity_check_fail */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		669F8B27198C28A50090578F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669F8B28198C28A50090578F /* app_integrity_check.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEFF56B616C05B15006F0DF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,6 +171,67 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		669F8B2D198C28A50090578F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jase Hannah (VDB867F4H6)";
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = /tmp/ecm_app_integrity_check.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"FAIL=1",
+					"DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../vendor/securefoundation\"",
+				);
+				INSTALL_PATH = "@loader_path";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(LOADER_PATH)ecm_app_integrity_check.dylib";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ecm_app_integrity_check;
+				PROVISIONING_PROFILE = "5EF083A2-75FF-467B-8A18-3CAE66073561";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SYMROOT = build;
+			};
+			name = Debug;
+		};
+		669F8B2E198C28A50090578F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jase Hannah (VDB867F4H6)";
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = /tmp/ecm_app_integrity_check.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ecm_app_integrity_check/ecm_app_integrity_check-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "FAIL=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../vendor/securefoundation\"",
+				);
+				INSTALL_PATH = "@loader_path";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(LOADER_PATH)ecm_app_integrity_check.dylib";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ecm_app_integrity_check;
+				PROVISIONING_PROFILE = "5EF083A2-75FF-467B-8A18-3CAE66073561";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SYMROOT = build;
+			};
+			name = Release;
+		};
 		FEFF56C616C05B15006F0DF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -246,6 +346,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		669F8B2C198C28A50090578F /* Build configuration list for PBXNativeTarget "ecm_app_integrity_check_fail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				669F8B2D198C28A50090578F /* Debug */,
+				669F8B2E198C28A50090578F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FEFF56B416C05B15006F0DF0 /* Build configuration list for PBXProject "ecm_app_integrity_check" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

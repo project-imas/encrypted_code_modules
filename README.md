@@ -16,6 +16,11 @@ The "iMAS Encrypted Code Modules" security control mitigates static attacks - al
   - Implementing App Integrity is difficult
   - iMAS introduces ECM
 
+# Diagram
+
+Below is a diagram showing the components for ECM
+<img src="diagram.jpg" />
+
 ## Installation
 Download code, compile ECM Demo App last.  Connect xcode to a iOS7 device and run.  
 - git pull encrypted_code_modules

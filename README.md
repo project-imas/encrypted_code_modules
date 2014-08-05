@@ -1,4 +1,4 @@
-# iMAS Encrypted Code Modules [![analytics](http://www.google-analytics.com/collect?v=1&t=pageview&_s=1&dl=https%3A%2F%2Fgithub.com%2Fproject-imas%2Fapp-password&_u=MAC~&cid=1757014354.1393964045&tid=UA-38868530-1)]()
+# iMAS Encrypted Code Modules [![analytics](http://www.google-analytics.com/collect?v=1&t=pageview&_s=1&dl=https%3A%2F%2Fgithub.com%2Fproject-imas%2Fencrypted_code_modules&_u=MAC~&cid=1757014354.1393964045&tid=UA-38868530-1)]()
 
 ## Background
 

@@ -24,7 +24,9 @@ Below is a diagram showing the components for ECM
 ## Installation
 Download code, compile ECM Demo App last.  Connect xcode to a iOS7 device and run.  
 - git pull encrypted_code_modules
-- compile ECM Demo App last.
+- Make sure that each project is putting derived data relative to the project.  This can be accomplished in XCode by going to *File->Project Settings...* and selecting "Project-relative" from the dropdown. 
+- Verify that an executable is set for ECM Build for the demo.  To do do this go to *Product->Scheme->Edit Scheme..* select *Run imas_ecm_demo* from the left panel, and then *imas_ecm_demo_app.app* in the Executable drop-down.
+- Compile the ECM Demo App last.  Make sure to use the *ECM Build* target.
 - Ensure XCode scheme is set to ECM Demo App > < device only >
 - Clean, run and explore
 
